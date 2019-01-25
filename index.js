@@ -8,7 +8,7 @@ module.exports = {
 			experimentalDecorators: true,
 			jsx: true,
 		},
-	}
+	},
 	plugins: ['prettier', 'unicorn'],
 	rules: {
 		'prettier/prettier': ['error', {
@@ -54,6 +54,8 @@ module.exports = {
 			},
 		],
 		'unicorn/no-abusive-eslint-disable': 'warn',
+		"react/jsx-indent": "off",
+		"react/jsx-fragments": "off",
 	},
 	settings: {
 		react: {

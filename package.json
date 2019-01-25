@@ -1,6 +1,6 @@
 {
 	"name": "@canx/eslint-config",
-	"version": "1.0.0",
+	"version": "1.0.4",
 	"private": false,
 	"repository": {
 		"type": "git",
@@ -9,7 +9,7 @@
 	"author": "Henry Gressmann <mail@henrygressmann.de> (https://henrygressmann.de)",
 	"peerDependencies": {
 		"eslint": "5.x",
-		"prettier": "1.15.x"
+		"prettier": "1.16.x"
 	},
 	"devDependencies": {
 		"eslint": "5.12.1",
