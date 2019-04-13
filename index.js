@@ -1,5 +1,13 @@
 module.exports = {
-	extends: ['xo', 'xo-react', 'prettier', 'prettier/react'],
+	extends: [
+		'plugin:import/errors',
+		'plugin:import/warnings',
+		'plugin:promise/recommended',
+		'xo',
+		'xo-react',
+		'prettier',
+		'prettier/react',
+	],
 	parser: 'babel-eslint',
 	parserOptions: {
 		sourceType: 'module',
@@ -9,14 +17,25 @@ module.exports = {
 			jsx: true,
 		},
 	},
-	plugins: ['prettier', 'unicorn'],
+	plugins: [
+		'simple-import-sort',
+		'prettier',
+		'promise',
+		'babel',
+		'unicorn',
+		'react-hooks',
+		'import',
+	],
 	rules: {
-		'prettier/prettier': ['error', {
-			"trailingComma": "all",
-			"useTabs": true,
-			"singleQuote": true,
-			"printWidth": 80
-		}],
+		'prettier/prettier': [
+			'error',
+			{
+				trailingComma: 'all',
+				useTabs: true,
+				singleQuote: true,
+				printWidth: 80,
+			},
+		],
 		'comma-dangle': ['error', 'always-multiline'],
 		'no-unused-expressions': 0,
 		'no-return-assign': ['error', 'except-parens'],
@@ -54,12 +73,22 @@ module.exports = {
 			},
 		],
 		'unicorn/no-abusive-eslint-disable': 'warn',
-		"react/jsx-indent": "off",
-		"react/jsx-fragments": "off",
+		'react/jsx-indent': 'off',
+		'react/jsx-fragments': 'off',
+		'react-hooks/rules-of-hooks': 'error',
+		'simple-import-sort/sort': 'error',
+		'sort-imports': 'off',
+		'import/order': 'off',
+		'valid-jsdoc': 0,
+		'babel/no-unused-expressions': 1,
+		'import/order': 0,
+		'import/no-unresolved': 0,
+		'import/default': 0,
+		'promise/always-return': 0,
 	},
 	settings: {
 		react: {
-			version: '16',
+			version: '999.999',
 		},
 	},
 };
