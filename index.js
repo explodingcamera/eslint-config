@@ -14,11 +14,11 @@ module.exports = {
 		ecmaFeatures: {
 			experimentalObjectRestSpread: true,
 			experimentalDecorators: true,
+			legacyDecorators: true,
 			jsx: true,
 		},
 	},
 	plugins: [
-		'simple-import-sort',
 		'prettier',
 		'promise',
 		'babel',
@@ -76,9 +76,6 @@ module.exports = {
 		'react/jsx-indent': 'off',
 		'react/jsx-fragments': 'off',
 		'react-hooks/rules-of-hooks': 'error',
-		'simple-import-sort/sort': 'error',
-		'sort-imports': 'off',
-		'import/order': 'off',
 		'valid-jsdoc': 0,
 		'babel/no-unused-expressions': 1,
 		'import/order': 0,
@@ -90,5 +87,8 @@ module.exports = {
 		react: {
 			version: '999.999',
 		},
+		"import/resolver": {
+			"babel-module": {}
+		}
 	},
 };
