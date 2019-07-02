@@ -18,14 +18,7 @@ module.exports = {
 			jsx: true,
 		},
 	},
-	plugins: [
-		'prettier',
-		'promise',
-		'babel',
-		'unicorn',
-		'react-hooks',
-		'import',
-	],
+	plugins: ['prettier', 'promise', 'babel', 'unicorn', 'react-hooks', 'import'],
 	rules: {
 		'prettier/prettier': [
 			'error',
@@ -42,7 +35,7 @@ module.exports = {
 		'lines-between-class-members': 0,
 		'react/jsx-child-element-spacing': 0,
 		'react/jsx-one-expression-per-line': 0,
-		'react/destructuring-assignment': 'never',
+		'react/destructuring-assignment': 0,
 		'react/forbid-component-props': [
 			'warn',
 			{
@@ -82,13 +75,14 @@ module.exports = {
 		'import/no-unresolved': 0,
 		'import/default': 0,
 		'promise/always-return': 0,
+		'require-atomic-updates': 'warn',
 	},
 	settings: {
 		react: {
 			version: '999.999',
 		},
-		"import/resolver": {
-			"babel-module": {}
-		}
+		'import/resolver': {
+			'babel-module': {},
+		},
 	},
 };

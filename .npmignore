@@ -1,0 +1,6 @@
+.eslintrc.js
+
+.idea/
+node_modules/
+.vscode/
+npm-debug.log
