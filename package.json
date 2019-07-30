@@ -1,6 +1,6 @@
 {
 	"name": "@canx/eslint-config",
-	"version": "7.0.2",
+	"version": "7.1.0",
 	"private": false,
 	"repository": {
 		"type": "git",
