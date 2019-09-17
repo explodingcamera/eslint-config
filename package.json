@@ -1,6 +1,6 @@
 {
 	"name": "@canx/eslint-config",
-	"version": "7.2.1",
+	"version": "7.3.0",
 	"private": false,
 	"repository": {
 		"type": "git",
@@ -10,7 +10,7 @@
 	"author": "Henry Gressmann <mail@henrygressmann.de> (https://henrygressmann.de)",
 	"dependencies": {
 		"babel-eslint": "10.0.3",
-		"eslint-config-prettier": "6.2.0",
+		"eslint-config-prettier": "6.3.0",
 		"eslint-config-xo": "0.26.0",
 		"eslint-config-xo-react": "0.20.0",
 		"eslint-import-resolver-babel-module": "5.1.0",
@@ -20,12 +20,12 @@
 		"eslint-plugin-promise": "4.2.1",
 		"eslint-plugin-react": "7.14.3",
 		"eslint-plugin-react-hooks": "2.0.1",
-		"eslint-plugin-unicorn": "10.0.0"
+		"eslint-plugin-unicorn": "11.0.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.5.5",
+		"@babel/core": "7.6.0",
 		"babel-plugin-module-resolver": "3.2.0",
-		"eslint": "6.3.0",
+		"eslint": "6.4.0",
 		"prettier": "1.18.2"
 	},
 	"peerDependencies": {
