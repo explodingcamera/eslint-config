@@ -1,6 +1,6 @@
 {
 	"name": "@explodingcamera/eslint-config",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"private": false,
 	"repository": {
 		"type": "git",
@@ -9,6 +9,7 @@
 	"license": "MIT",
 	"author": "Henry Gressmann <mail@henrygressmann.de> (https://henrygressmann.de)",
 	"dependencies": {
+		"@react-native-community/eslint-config": "^0.0.5",
 		"babel-eslint": "10.0.3",
 		"eslint-config-prettier": "6.7.0",
 		"eslint-config-xo": "0.27.2",
@@ -25,12 +26,12 @@
 	},
 	"devDependencies": {
 		"@babel/core": "7.7.4",
-		"@react-native-community/eslint-config": "^0.0.5",
 		"babel-plugin-module-resolver": "3.2.0",
 		"eslint": "^6.7.1",
 		"prettier": "1.19.1"
 	},
 	"peerDependencies": {
+		"babel-plugin-module-resolver": "3.2.0",
 		"eslint": "6.x",
 		"prettier": "1.18.x"
 	}
