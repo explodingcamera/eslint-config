@@ -7,6 +7,7 @@ module.exports = {
 		'xo-react',
 		'prettier',
 		'prettier/react',
+		'@react-native-community',
 	],
 	parser: 'babel-eslint',
 	parserOptions: {
