@@ -7,7 +7,6 @@ module.exports = {
 		'xo-react',
 		'prettier',
 		'prettier/react',
-		'@react-native-community',
 	],
 	parser: 'babel-eslint',
 	parserOptions: {
@@ -19,7 +18,7 @@ module.exports = {
 			jsx: true,
 		},
 	},
-	plugins: ['prettier', 'promise', 'babel', 'unicorn', 'react-hooks', 'import'],
+	plugins: ['prettier', 'promise', 'babel', 'unicorn', 'react-hooks', 'react-native', 'import'],
 	rules: {
 		'prettier/prettier': [
 			'error',
