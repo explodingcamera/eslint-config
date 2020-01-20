@@ -13,7 +13,7 @@
 ## Install
 
 ```
-$ npm install -D -E eslint prettier @canx/eslint-config
+$ npm install -D -E eslint @canx/eslint-config
 ```
 
 ## Usage
