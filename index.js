@@ -7,6 +7,8 @@ module.exports = {
 		'xo-react',
 		'prettier',
 		'prettier/react',
+		'prettier/babel',
+		'prettier/unicorn',
 	],
 	parser: 'babel-eslint',
 	parserOptions: {
@@ -18,7 +20,15 @@ module.exports = {
 			jsx: true,
 		},
 	},
-	plugins: ['prettier', 'promise', 'babel', 'unicorn', 'react-hooks', 'react-native', 'import'],
+	plugins: [
+		'prettier',
+		'promise',
+		'babel',
+		'unicorn',
+		'react-hooks',
+		'react-native',
+		'import',
+	],
 	rules: {
 		'prettier/prettier': [
 			'error',
