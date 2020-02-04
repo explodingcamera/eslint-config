@@ -6,9 +6,13 @@ module.exports = {
 		'xo',
 		'xo-react',
 		'prettier',
-		'prettier/react',
+		'prettier/@typescript-eslint',
 		'prettier/babel',
+		'prettier/flowtype',
+		'prettier/react',
+		'prettier/standard',
 		'prettier/unicorn',
+		'prettier/vue',
 	],
 	parser: 'babel-eslint',
 	parserOptions: {
@@ -47,21 +51,11 @@ module.exports = {
 		'react/jsx-child-element-spacing': 0,
 		'react/jsx-one-expression-per-line': 0,
 		'react/destructuring-assignment': 0,
-		'react/forbid-component-props': [
-			'warn',
-			{
-				forbid: ['style'],
-			},
-		],
+		'react/forbid-component-props': 0,
 		'react/static-property-placement': 'warn',
 		'react/state-in-constructor': 'warn',
 		'react/no-danger': 'warn',
-		'react/forbid-dom-props': [
-			'warn',
-			{
-				forbid: ['style'],
-			},
-		],
+		'react/forbid-dom-props': 0,
 		'react/no-unescaped-entities': 0,
 		'react/jsx-max-props-per-line': [
 			'error',
@@ -93,7 +87,7 @@ module.exports = {
 	},
 	settings: {
 		react: {
-			version: '999.999',
+			version: 'detect',
 		},
 		'import/resolver': {
 			'babel-module': {},
