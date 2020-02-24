@@ -83,6 +83,7 @@ module.exports = {
 		'import/no-unresolved': 0,
 		'import/default': 0,
 		'promise/always-return': 0,
+		'promise/prefer-await-to-then': 0,
 		'require-atomic-updates': 'warn',
 	},
 	settings: {
