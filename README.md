@@ -7,7 +7,7 @@
 * Security Issue Detection
 * Filename conventions (kebab-case to prevent OS-Specific issues with capital letters)
 * Enforces Promise best-practices
-* Supports Import Resolvers in babel & co
+* Automatically supports babel-plugin-module-resolver
 & much more
 
 ## Install

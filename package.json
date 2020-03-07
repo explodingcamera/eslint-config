@@ -19,19 +19,21 @@
 		"eslint-plugin-import": "2.20.1",
 		"eslint-plugin-prettier": "3.1.2",
 		"eslint-plugin-promise": "4.2.1",
-		"eslint-plugin-react": "7.18.3",
+		"eslint-plugin-react": "7.19.0",
 		"eslint-plugin-react-hooks": "2.5.0",
 		"eslint-plugin-react-native": "^3.8.1",
 		"eslint-plugin-unicorn": "16.1.1",
 		"prettier": "1.19.1"
 	},
 	"devDependencies": {
-		"@babel/core": "7.8.6",
+		"@babel/core": "7.8.7",
 		"babel-plugin-module-resolver": "4.0.0",
 		"eslint": "6.8.0"
 	},
 	"peerDependencies": {
-		"babel-plugin-module-resolver": "3.2.0",
-		"eslint": "6.x"
+		"eslint": "^6.8"
+	},
+	"optionalDependencies": {
+		"babel-plugin-module-resolver": "^4"
 	}
 }

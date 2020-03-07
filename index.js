@@ -1,4 +1,6 @@
-module.exports = {
+const babelModuleResolver = require.resolve('babel-plugin-module-resolver');
+
+const config = {
 	extends: [
 		'plugin:import/errors',
 		'plugin:import/warnings',
@@ -90,8 +92,12 @@ module.exports = {
 		react: {
 			version: 'detect',
 		},
-		'import/resolver': {
-			'babel-module': {},
-		},
+		'import/resolver': {},
 	},
 };
+
+if (babelModuleResolver) {
+	config.settings['import/resolver']['babel-module'] = {};
+}
+
+module.exports = config;
