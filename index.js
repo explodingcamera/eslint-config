@@ -27,24 +27,15 @@ const config = {
 		},
 	},
 	plugins: [
-		'prettier',
 		'promise',
 		'babel',
 		'unicorn',
 		'react-hooks',
 		'react-native',
 		'import',
+		'prettier',
 	],
 	rules: {
-		'prettier/prettier': [
-			'error',
-			{
-				trailingComma: 'all',
-				useTabs: true,
-				singleQuote: true,
-				printWidth: 80,
-			},
-		],
 		'react/boolean-prop-naming': 0,
 		'comma-dangle': ['error', 'always-multiline'],
 		'no-unused-expressions': 0,
@@ -87,6 +78,16 @@ const config = {
 		'promise/always-return': 0,
 		'promise/prefer-await-to-then': 0,
 		'require-atomic-updates': 'warn',
+		'prettier/prettier': [
+			'error',
+			{
+				trailingComma: 'all',
+				useTabs: true,
+				singleQuote: true,
+				printWidth: 80,
+				arrowParens: 'avoid',
+			},
+		],
 	},
 	settings: {
 		react: {

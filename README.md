@@ -42,3 +42,12 @@ Now you can also use it via the eslint cli:
 ```bash
 $ npx eslint --format=pretty file.js
 ```
+
+## Note for vs-code users:
+Sometimes the vscode plugin can act up, I recommend updating your config:
+```js
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+		},
+```
