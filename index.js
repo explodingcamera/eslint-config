@@ -1,4 +1,4 @@
-const config = require('config.json');
+const config = require('./config.json');
 const babelModuleResolver = require.resolve('babel-plugin-module-resolver');
 
 if (babelModuleResolver) {
