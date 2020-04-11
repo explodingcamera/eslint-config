@@ -6,13 +6,13 @@
 		"type": "git",
 		"url": "git+https://github.com/explodingcamera/eslint-config.git"
 	},
-	"scripts": {
-		"preversion": "npm run build",
-		"build": "node build-config.js",
-		"bump": "np"
-	},
 	"license": "MIT",
 	"author": "Henry Gressmann <mail@henrygressmann.de> (https://henrygressmann.de)",
+	"scripts": {
+		"build": "node build-config.js",
+		"bump": "np",
+		"preversion": "npm run build"
+	},
 	"dependencies": {
 		"babel-eslint": "10.1.0",
 		"eslint-formatter-pretty": "^3.0.1",
