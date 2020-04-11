@@ -89,7 +89,7 @@ const config = {
 	},
 	settings: {
 		react: {
-			version: 'detect',
+			version: 'latest',
 		},
 		'import/resolver': {},
 	},
