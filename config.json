@@ -360,6 +360,9 @@
     "@typescript-eslint/indent": [
       "off"
     ],
+    "@typescript-eslint/keyword-spacing": [
+      "off"
+    ],
     "@typescript-eslint/member-delimiter-style": [
       "off"
     ],
