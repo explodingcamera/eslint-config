@@ -2,19 +2,21 @@
 ## Some Features
 
 * Mostly Autofixable
-* Also runs prettier (No extra config needed, you only need the eslint editor plugin)
+* Prettier is run automatically (No extra config needed)
 * React/JSX + React Hooks support
 * Security Issue Detection
-* Filename conventions (kebab-case to prevent OS-Specific issues with capital letters)
 * Enforces Promise best-practices
-* Automatically supports babel-plugin-module-resolver
+* Supports babel-plugin-module-resolver
+* TypeScript support
 & much more
 
 ## Install
 
 ```
-$ npm install -D -E eslint @canx/eslint-config
+$ npm install -D -E eslint @explodingcamera/eslint-config
 ```
+
+(For typescript support, you need to have `typescript` installed too)
 
 ## Usage
 

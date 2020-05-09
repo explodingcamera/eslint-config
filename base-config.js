@@ -14,8 +14,14 @@ const config = {
 		'prettier/unicorn',
 		'prettier/vue',
 	],
+	env: {
+		browser: true,
+		node: true,
+		es2020: true,
+	},
 	parser: 'babel-eslint',
 	parserOptions: {
+		ecmaVersion: 2020,
 		sourceType: 'module',
 		ecmaFeatures: {
 			experimentalObjectRestSpread: true,
@@ -92,6 +98,32 @@ const config = {
 			version: 'latest',
 		},
 		'import/resolver': {},
+	},
+};
+
+const cfg = JSON.parse(JSON.stringify(config));
+
+config.overrides = [];
+config.overrides[0] = {
+	...cfg,
+	files: ['**/*.ts', '**/*.tsx'],
+	extends: [
+		...cfg.extends,
+		'plugin:@typescript-eslint/recommended',
+		'xo-typescript',
+	],
+	plugins: [...cfg.plugins, '@typescript-eslint'],
+	parser: '@typescript-eslint/parser',
+	parserOptions: {
+		ecmaVersion: 2020,
+		sourceType: 'module',
+		ecmaFeatures: {
+			jsx: true,
+		},
+		warnOnUnsupportedTypeScriptVersion: false,
+	},
+	rules: {
+		...cfg.rules,
 	},
 };
 
