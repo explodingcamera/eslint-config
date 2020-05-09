@@ -14,6 +14,7 @@ if (typescript) {
 	config.overrides.push({
 		...configTS,
 		files: ['**/*.ts', '**/*.tsx'],
+		ignorePatterns: undefined,
 	});
 }
 
