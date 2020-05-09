@@ -124,9 +124,9 @@ config.overrides[0] = {
 	},
 	rules: {
 		...cfg.rules,
-		"@typescript-eslint/indent": [
-			"off"
-		],
+		'@typescript-eslint/indent': ['off'],
+		'@typescript-eslint/prefer-readonly': ['off'],
+		'@typescript-eslint/prefer-readonly-parameter-types': ['off'],
 	},
 };
 

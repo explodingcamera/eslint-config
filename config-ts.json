@@ -165,6 +165,16 @@
         "arrowParens": "avoid"
       }
     ],
+    "@typescript-eslint/indent": [
+      "off",
+      "tab",
+      {
+        "SwitchCase": 1,
+        "flatTernaryExpressions": false,
+        "offsetTernaryExpressions": false,
+        "ignoreComments": false
+      }
+    ],
     "@typescript-eslint/adjacent-overload-signatures": [
       "error"
     ],
@@ -270,16 +280,6 @@
     ],
     "indent": [
       "off",
-      "tab",
-      {
-        "SwitchCase": 1,
-        "flatTernaryExpressions": false,
-        "offsetTernaryExpressions": false,
-        "ignoreComments": false
-      }
-    ],
-    "@typescript-eslint/indent": [
-      "error",
       "tab",
       {
         "SwitchCase": 1,

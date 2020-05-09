@@ -18,5 +18,4 @@ if (typescript) {
 	delete config.overrides[i - 1].ignorePatterns;
 }
 
-
 module.exports = config;
