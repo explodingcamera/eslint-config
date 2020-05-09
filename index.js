@@ -1,21 +1,22 @@
 const config = require('./config.json');
 
-const babelModuleResolver = require.resolve('babel-plugin-module-resolver');
-const typescript = require.resolve('typescript');
-
 config.overrides = [];
 
-if (babelModuleResolver) {
-	config.settings['import/resolver']['babel-module'] = {};
-}
+try {
+	require.resolve('babel-plugin-module-resolver');
 
-if (typescript) {
+	config.settings['import/resolver']['babel-module'] = {};
+} catch (_) {}
+
+try {
+	require.resolve('typescript');
+
 	const configTS = require('./config-ts.json');
 	const i = config.overrides.push({
 		...configTS,
 		files: ['**/*.ts', '**/*.tsx'],
 	});
 	delete config.overrides[i - 1].ignorePatterns;
-}
+} catch (_) {}
 
 module.exports = config;
