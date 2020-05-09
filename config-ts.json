@@ -175,6 +175,15 @@
         "ignoreComments": false
       }
     ],
+    "@typescript-eslint/prefer-readonly": [
+      "off"
+    ],
+    "@typescript-eslint/prefer-readonly-parameter-types": [
+      "off",
+      {
+        "checkParameterProperties": true
+      }
+    ],
     "@typescript-eslint/adjacent-overload-signatures": [
       "error"
     ],
@@ -475,15 +484,6 @@
     ],
     "@typescript-eslint/prefer-optional-chain": [
       "error"
-    ],
-    "@typescript-eslint/prefer-readonly": [
-      "error"
-    ],
-    "@typescript-eslint/prefer-readonly-parameter-types": [
-      "error",
-      {
-        "checkParameterProperties": true
-      }
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
       "error"
