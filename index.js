@@ -11,11 +11,11 @@ if (babelModuleResolver) {
 
 if (typescript) {
 	const configTS = require('./config-ts.json');
-	config.overrides.push({
+	const i = config.overrides.push({
 		...configTS,
 		files: ['**/*.ts', '**/*.tsx'],
-		ignorePatterns: undefined,
 	});
+	delete config.overrides[i - 1].ignorePatterns;
 }
 
 
