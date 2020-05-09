@@ -7,14 +7,14 @@
   "globals": {},
   "parser": "babel-eslint",
   "parserOptions": {
+    "ecmaVersion": 2020,
     "sourceType": "module",
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
       "experimentalDecorators": true,
       "legacyDecorators": true,
       "jsx": true
-    },
-    "ecmaVersion": 2020
+    }
   },
   "plugins": [
     "react",
@@ -498,6 +498,7 @@
       {
         "SwitchCase": 1,
         "flatTernaryExpressions": false,
+        "offsetTernaryExpressions": false,
         "ignoreComments": false
       }
     ],

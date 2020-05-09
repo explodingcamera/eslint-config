@@ -7,7 +7,7 @@
   "globals": {},
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2020,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true,
@@ -274,6 +274,7 @@
       {
         "SwitchCase": 1,
         "flatTernaryExpressions": false,
+        "offsetTernaryExpressions": false,
         "ignoreComments": false
       }
     ],
@@ -283,6 +284,7 @@
       {
         "SwitchCase": 1,
         "flatTernaryExpressions": false,
+        "offsetTernaryExpressions": false,
         "ignoreComments": false
       }
     ],
