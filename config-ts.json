@@ -179,10 +179,7 @@
       "off"
     ],
     "@typescript-eslint/prefer-readonly-parameter-types": [
-      "off",
-      {
-        "checkParameterProperties": true
-      }
+      "off"
     ],
     "@typescript-eslint/adjacent-overload-signatures": [
       "error"
@@ -272,6 +269,12 @@
     "@typescript-eslint/default-param-last": [
       "error"
     ],
+    "dot-notation": [
+      "off"
+    ],
+    "@typescript-eslint/dot-notation": [
+      "error"
+    ],
     "@typescript-eslint/consistent-type-assertions": [
       "error",
       {
@@ -302,6 +305,13 @@
     ],
     "@typescript-eslint/keyword-spacing": [
       "error"
+    ],
+    "@typescript-eslint/lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
     ],
     "@typescript-eslint/member-delimiter-style": [
       "error",
@@ -391,6 +401,9 @@
       "error"
     ],
     "@typescript-eslint/no-inferrable-types": [
+      "error"
+    ],
+    "@typescript-eslint/no-invalid-void-type": [
       "error"
     ],
     "@typescript-eslint/no-misused-new": [
@@ -489,6 +502,9 @@
       "error"
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
+      "error"
+    ],
+    "@typescript-eslint/prefer-ts-expect-error": [
       "error"
     ],
     "@typescript-eslint/promise-function-async": [
@@ -1335,9 +1351,6 @@
       "warn"
     ],
     "default-case": [
-      "error"
-    ],
-    "dot-notation": [
       "error"
     ],
     "eqeqeq": [
