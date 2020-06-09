@@ -370,9 +370,6 @@
         "allowSingleExtends": true
       }
     ],
-    "@typescript-eslint/no-extra-non-null-assertion": [
-      "error"
-    ],
     "no-extra-parens": [
       "off"
     ],
@@ -391,9 +388,16 @@
         "allowWithDecorator": true
       }
     ],
+    "no-void": [
+      "error",
+      {
+        "allowAsStatement": true
+      }
+    ],
     "@typescript-eslint/no-floating-promises": [
       "error",
       {
+        "ignoreVoid": true,
         "ignoreIIFE": true
       }
     ],
@@ -416,9 +420,6 @@
         "checksVoidReturn": false
       }
     ],
-    "@typescript-eslint/no-non-null-asserted-optional-chain": [
-      "error"
-    ],
     "@typescript-eslint/no-this-alias": [
       "error",
       {
@@ -433,6 +434,9 @@
     ],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
       "error"
+    ],
+    "no-constant-condition": [
+      "off"
     ],
     "@typescript-eslint/no-unnecessary-qualifier": [
       "error"
@@ -584,35 +588,71 @@
     "no-redeclare": [
       "off"
     ],
-    "@typescript-eslint/ban-ts-ignore": [
+    "@typescript-eslint/ban-ts-comment": [
       "error"
     ],
-    "@typescript-eslint/camelcase": [
-      "error"
-    ],
-    "@typescript-eslint/class-name-casing": [
-      "error"
-    ],
-    "@typescript-eslint/explicit-function-return-type": [
+    "@typescript-eslint/explicit-module-boundary-types": [
       "warn"
-    ],
-    "@typescript-eslint/interface-name-prefix": [
-      "error"
     ],
     "@typescript-eslint/no-explicit-any": [
       "warn"
     ],
+    "@typescript-eslint/no-extra-non-null-assertion": [
+      "error"
+    ],
     "@typescript-eslint/no-namespace": [
+      "error"
+    ],
+    "@typescript-eslint/no-non-null-asserted-optional-chain": [
       "error"
     ],
     "@typescript-eslint/no-non-null-assertion": [
       "warn"
     ],
-    "no-use-before-define": [
+    "constructor-super": [
       "off"
     ],
-    "@typescript-eslint/no-use-before-define": [
-      "error"
+    "getter-return": [
+      "off"
+    ],
+    "no-const-assign": [
+      "off"
+    ],
+    "no-dupe-args": [
+      "off"
+    ],
+    "no-dupe-keys": [
+      "off"
+    ],
+    "no-func-assign": [
+      "off"
+    ],
+    "no-import-assign": [
+      "off"
+    ],
+    "no-new-symbol": [
+      "off"
+    ],
+    "no-obj-calls": [
+      "off"
+    ],
+    "no-setter-return": [
+      "off"
+    ],
+    "no-this-before-super": [
+      "off"
+    ],
+    "no-undef": [
+      "off",
+      {
+        "typeof": true
+      }
+    ],
+    "no-unreachable": [
+      "off"
+    ],
+    "no-unsafe-negation": [
+      "off"
     ],
     "no-var": [
       "error"
@@ -625,6 +665,12 @@
     ],
     "prefer-spread": [
       "error"
+    ],
+    "valid-typeof": [
+      "off",
+      {
+        "requireStringLiterals": false
+      }
     ],
     "vue/html-self-closing": [
       0
@@ -1228,9 +1274,6 @@
     "for-direction": [
       "error"
     ],
-    "getter-return": [
-      "error"
-    ],
     "no-async-promise-executor": [
       "error"
     ],
@@ -1243,22 +1286,13 @@
     "no-cond-assign": [
       "error"
     ],
-    "no-constant-condition": [
-      "error"
-    ],
     "no-control-regex": [
       "error"
     ],
     "no-debugger": [
       "error"
     ],
-    "no-dupe-args": [
-      "error"
-    ],
     "no-dupe-else-if": [
-      "error"
-    ],
-    "no-dupe-keys": [
       "error"
     ],
     "no-duplicate-case": [
@@ -1279,12 +1313,6 @@
     "no-extra-boolean-cast": [
       "error"
     ],
-    "no-func-assign": [
-      "error"
-    ],
-    "no-import-assign": [
-      "error"
-    ],
     "no-inner-declarations": [
       "error"
     ],
@@ -1297,16 +1325,10 @@
     "no-misleading-character-class": [
       "error"
     ],
-    "no-obj-calls": [
-      "error"
-    ],
     "no-prototype-builtins": [
       "error"
     ],
     "no-regex-spaces": [
-      "error"
-    ],
-    "no-setter-return": [
       "error"
     ],
     "no-sparse-arrays": [
@@ -1315,23 +1337,11 @@
     "no-template-curly-in-string": [
       "error"
     ],
-    "no-unreachable": [
-      "error"
-    ],
     "no-unsafe-finally": [
-      "error"
-    ],
-    "no-unsafe-negation": [
       "error"
     ],
     "use-isnan": [
       "error"
-    ],
-    "valid-typeof": [
-      "error",
-      {
-        "requireStringLiterals": false
-      }
     ],
     "accessor-pairs": [
       "error",
@@ -1342,7 +1352,11 @@
       }
     ],
     "array-callback-return": [
-      "error"
+      "error",
+      {
+        "allowImplicit": true,
+        "checkForEach": false
+      }
     ],
     "block-scoped-var": [
       "error"
@@ -1480,9 +1494,6 @@
     "no-useless-return": [
       "error"
     ],
-    "no-void": [
-      "error"
-    ],
     "no-warning-comments": [
       "warn"
     ],
@@ -1520,40 +1531,10 @@
     "no-undef-init": [
       "error"
     ],
-    "no-undef": [
-      "error",
-      {
-        "typeof": true
-      }
-    ],
-    "handle-callback-err": [
-      "warn"
-    ],
     "no-buffer-constructor": [
       "error"
     ],
-    "no-mixed-requires": [
-      "error",
-      {
-        "grouping": true,
-        "allowCall": true
-      }
-    ],
-    "no-new-require": [
-      "error"
-    ],
-    "no-path-concat": [
-      "error"
-    ],
     "no-restricted-imports": [
-      "error",
-      "domain",
-      "freelist",
-      "smalloc",
-      "sys",
-      "colors"
-    ],
-    "no-restricted-modules": [
       "error",
       "domain",
       "freelist",
@@ -1672,19 +1653,7 @@
         }
       }
     ],
-    "constructor-super": [
-      "error"
-    ],
     "no-class-assign": [
-      "error"
-    ],
-    "no-const-assign": [
-      "error"
-    ],
-    "no-new-symbol": [
-      "error"
-    ],
-    "no-this-before-super": [
       "error"
     ],
     "no-useless-computed-key": [
