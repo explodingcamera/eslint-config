@@ -1197,7 +1197,7 @@
       "error",
       "always",
       {
-        "ignorePattern": "pragma|ignore|prettier-ignore",
+        "ignorePattern": "pragma|ignore|prettier-ignore|webpack\\w+:",
         "ignoreInlineComments": true,
         "ignoreConsecutiveComments": true
       }
