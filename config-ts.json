@@ -337,7 +337,8 @@
       {
         "properties": "always",
         "ignoreDestructuring": false,
-        "ignoreImports": false
+        "ignoreImports": false,
+        "ignoreGlobals": false
       }
     ],
     "@typescript-eslint/no-base-to-string": [
@@ -456,7 +457,7 @@
         "vars": "all",
         "args": "after-used",
         "ignoreRestSiblings": true,
-        "argsIgnorePattern": "^_$",
+        "argsIgnorePattern": "^_",
         "caughtErrors": "all",
         "caughtErrorsIgnorePattern": "^_$"
       }
@@ -1322,7 +1323,13 @@
     "no-irregular-whitespace": [
       "error"
     ],
+    "no-loss-of-precision": [
+      "error"
+    ],
     "no-misleading-character-class": [
+      "error"
+    ],
+    "no-promise-executor-return": [
       "error"
     ],
     "no-prototype-builtins": [
@@ -1335,6 +1342,9 @@
       "error"
     ],
     "no-template-curly-in-string": [
+      "error"
+    ],
+    "no-unreachable-loop": [
       "error"
     ],
     "no-unsafe-finally": [
