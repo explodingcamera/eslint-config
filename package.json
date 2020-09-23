@@ -11,6 +11,7 @@
 	"scripts": {
 		"build": "node build/build-config.js",
 		"bump": "np",
+		"test": "exit 0",
 		"preversion": "npm run build"
 	},
 	"dependencies": {
