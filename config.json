@@ -422,9 +422,6 @@
     "@typescript-eslint/type-annotation-spacing": [
       "off"
     ],
-    "arrow-body-style": [
-      0
-    ],
     "curly": [
       0
     ],
@@ -444,9 +441,6 @@
       0
     ],
     "no-unexpected-multiline": [
-      0
-    ],
-    "prefer-arrow-callback": [
       0
     ],
     "quotes": [

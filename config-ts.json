@@ -231,6 +231,11 @@
             "fixWith": "Record<string, unknown>"
           },
           "Function": "Use a specific function type instead, like `() => void`.",
+          "[]": "Don't use the empty array type `[]`. It only allows empty arrays. Use `SomeType[]` instead.",
+          "[[]]": "Don't use `[[]]`. It only allows an array with a single element which is an empty array. Use `SomeType[][]` instead.",
+          "[[[]]]": "Don't use `[[[]]]`. Use `SomeType[][][]` instead.",
+          "[[[[]]]]": "ur drunk 🤡",
+          "[[[[[]]]]]": "🦄💥",
           "Omit": "Prefer the `Except` type in the `type-fest` package instead as it's stricter."
         }
       }
@@ -474,6 +479,9 @@
     "@typescript-eslint/no-unnecessary-type-assertion": [
       "error"
     ],
+    "@typescript-eslint/no-unnecessary-type-constraint": [
+      "error"
+    ],
     "@typescript-eslint/no-unused-expressions": [
       "error"
     ],
@@ -577,6 +585,12 @@
         "named": "never",
         "asyncArrow": "always"
       }
+    ],
+    "space-infix-ops": [
+      "off"
+    ],
+    "@typescript-eslint/space-infix-ops": [
+      "error"
     ],
     "semi": [
       "off",
@@ -915,12 +929,6 @@
     "@typescript-eslint/no-extra-parens": [
       "off"
     ],
-    "@typescript-eslint/space-infix-ops": [
-      "off"
-    ],
-    "arrow-body-style": [
-      0
-    ],
     "curly": [
       0
     ],
@@ -940,9 +948,6 @@
       0
     ],
     "no-unexpected-multiline": [
-      0
-    ],
-    "prefer-arrow-callback": [
       0
     ],
     "array-bracket-newline": [
@@ -1133,9 +1138,6 @@
     "space-in-parens": [
       "off",
       "never"
-    ],
-    "space-infix-ops": [
-      "off"
     ],
     "space-return-throw-case": [
       "off"
