@@ -33,6 +33,26 @@
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
+    "radix": [
+      "warn"
+    ],
+    "default-case": [
+      "off"
+    ],
+    "new-cap": [
+      "warn",
+      {
+        "newIsCap": true,
+        "capIsNew": true,
+        "properties": true
+      }
+    ],
+    "no-negated-condition": [
+      "warn"
+    ],
+    "prefer-const": [
+      "warn"
+    ],
     "react/no-array-index-key": [
       "warn"
     ],
@@ -178,8 +198,21 @@
         "arrowParens": "avoid"
       }
     ],
+    "@typescript-eslint/lines-between-class-members": [
+      "off",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
     "@typescript-eslint/no-confusing-void-expression": [
       "off"
+    ],
+    "@typescript-eslint/prefer-optional-chain": [
+      "warn"
+    ],
+    "@typescript-eslint/prefer-nullish-coalescing": [
+      "warn"
     ],
     "@typescript-eslint/comma-dangle": [
       "error",
@@ -200,6 +233,12 @@
     ],
     "@typescript-eslint/prefer-readonly-parameter-types": [
       "off"
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": [
+      "off"
+    ],
+    "@typescript-eslint/consistent-indexed-object-style": [
+      "warn"
     ],
     "@typescript-eslint/adjacent-overload-signatures": [
       "error"
@@ -262,9 +301,6 @@
     "@typescript-eslint/class-literal-property-style": [
       "error",
       "getters"
-    ],
-    "@typescript-eslint/consistent-indexed-object-style": [
-      "error"
     ],
     "brace-style": [
       "off",
@@ -336,13 +372,6 @@
     ],
     "@typescript-eslint/keyword-spacing": [
       "error"
-    ],
-    "@typescript-eslint/lines-between-class-members": [
-      "error",
-      "always",
-      {
-        "exceptAfterSingleLine": true
-      }
     ],
     "@typescript-eslint/member-delimiter-style": [
       "error",
@@ -541,12 +570,6 @@
     "@typescript-eslint/prefer-namespace-keyword": [
       "error"
     ],
-    "@typescript-eslint/prefer-nullish-coalescing": [
-      "error"
-    ],
-    "@typescript-eslint/prefer-optional-chain": [
-      "error"
-    ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
       "error"
     ],
@@ -648,9 +671,6 @@
     "@typescript-eslint/ban-ts-comment": [
       "error"
     ],
-    "@typescript-eslint/explicit-module-boundary-types": [
-      "warn"
-    ],
     "@typescript-eslint/no-explicit-any": [
       "warn"
     ],
@@ -709,9 +729,6 @@
       "off"
     ],
     "no-var": [
-      "error"
-    ],
-    "prefer-const": [
       "error"
     ],
     "prefer-rest-params": [
@@ -1458,9 +1475,6 @@
     "complexity": [
       "warn"
     ],
-    "default-case": [
-      "error"
-    ],
     "default-case-last": [
       "error"
     ],
@@ -1609,9 +1623,6 @@
     "prefer-regex-literals": [
       "error"
     ],
-    "radix": [
-      "error"
-    ],
     "yoda": [
       "error"
     ],
@@ -1668,21 +1679,10 @@
     "max-statements-per-line": [
       "error"
     ],
-    "new-cap": [
-      "error",
-      {
-        "newIsCap": true,
-        "capIsNew": true,
-        "properties": true
-      }
-    ],
     "no-lonely-if": [
       "error"
     ],
     "no-multi-assign": [
-      "error"
-    ],
-    "no-negated-condition": [
       "error"
     ],
     "no-new-object": [

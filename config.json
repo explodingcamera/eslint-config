@@ -29,6 +29,26 @@
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
+    "radix": [
+      "warn"
+    ],
+    "default-case": [
+      "off"
+    ],
+    "new-cap": [
+      "warn",
+      {
+        "newIsCap": true,
+        "capIsNew": true,
+        "properties": true
+      }
+    ],
+    "no-negated-condition": [
+      "warn"
+    ],
+    "prefer-const": [
+      "warn"
+    ],
     "react/no-array-index-key": [
       "warn"
     ],
@@ -1040,9 +1060,6 @@
     "complexity": [
       "warn"
     ],
-    "default-case": [
-      "error"
-    ],
     "default-case-last": [
       "error"
     ],
@@ -1206,9 +1223,6 @@
     "prefer-regex-literals": [
       "error"
     ],
-    "radix": [
-      "error"
-    ],
     "yoda": [
       "error"
     ],
@@ -1291,14 +1305,6 @@
     "max-statements-per-line": [
       "error"
     ],
-    "new-cap": [
-      "error",
-      {
-        "newIsCap": true,
-        "capIsNew": true,
-        "properties": true
-      }
-    ],
     "no-array-constructor": [
       "error"
     ],
@@ -1306,9 +1312,6 @@
       "error"
     ],
     "no-multi-assign": [
-      "error"
-    ],
-    "no-negated-condition": [
       "error"
     ],
     "no-new-object": [
