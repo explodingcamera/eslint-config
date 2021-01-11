@@ -1,36 +1,43 @@
-const CLIEngine = require('eslint').CLIEngine;
+const { ESLint } = require('eslint');
 const fs = require('fs');
 
-const cli = new CLIEngine({
+const eslint = new ESLint({
 	useEslintrc: false,
 	baseConfig: {
 		extends: ['./base-config.js'],
 	},
 });
 
-let config = cli.getConfigForFile('./sample.js');
-let configTS = cli.getConfigForFile('./sample.ts');
+eslint
+	.calculateConfigForFile('./sample.js')
+	.then(config => {
+		config.parser = 'babel-eslint';
+		config = JSON.stringify(config, null, 2);
 
-config.parser = 'babel-eslint';
-configTS.parser = '@typescript-eslint/parser';
+		fs.writeFile('./config.json', config, err => {
+			if (err) {
+				console.error(err);
+				return;
+			}
 
-config = JSON.stringify(config, null, 2);
-configTS = JSON.stringify(configTS, null, 2);
+			console.log('File has been created/updated');
+		});
+	})
+	.catch(e => console.error(e));
 
-fs.writeFile('./config.json', config, err => {
-	if (err) {
-		console.error(err);
-		return;
-	}
+eslint
+	.calculateConfigForFile('./sample.ts')
+	.then(configTS => {
+		configTS.parser = '@typescript-eslint/parser';
+		configTS = JSON.stringify(configTS, null, 2);
 
-	console.log('File has been created/updated');
-});
+		fs.writeFile('./config-ts.json', configTS, err => {
+			if (err) {
+				console.error(err);
+				return;
+			}
 
-fs.writeFile('./config-ts.json', configTS, err => {
-	if (err) {
-		console.error(err);
-		return;
-	}
-
-	console.log('File has been created/updated');
-});
+			console.log('File has been created/updated');
+		});
+	})
+	.catch(e => console.error(e));
