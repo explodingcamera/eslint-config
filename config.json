@@ -29,6 +29,18 @@
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
+    "react/no-array-index-key": [
+      "warn"
+    ],
+    "capitalized-comments": [
+      "off",
+      "always",
+      {
+        "ignorePattern": "pragma|ignore|prettier-ignore|webpack\\w+:|c8",
+        "ignoreInlineComments": true,
+        "ignoreConsecutiveComments": true
+      }
+    ],
     "react/boolean-prop-naming": [
       0,
       {
@@ -754,9 +766,6 @@
     "react/no-access-state-in-setstate": [
       "error"
     ],
-    "react/no-array-index-key": [
-      "error"
-    ],
     "react/no-children-prop": [
       "error"
     ],
@@ -1254,15 +1263,6 @@
         "ignoreDestructuring": false,
         "ignoreImports": false,
         "ignoreGlobals": false
-      }
-    ],
-    "capitalized-comments": [
-      "error",
-      "always",
-      {
-        "ignorePattern": "pragma|ignore|prettier-ignore|webpack\\w+:|c8",
-        "ignoreInlineComments": true,
-        "ignoreConsecutiveComments": true
       }
     ],
     "func-name-matching": [

@@ -40,6 +40,13 @@ const config = {
 		'prettier',
 	],
 	rules: {
+		radix: 'warn',
+		'default-case': ['off'],
+		'new-cap': 'warn',
+		'no-negated-condition': 'warn',
+		'prefer-const': 'warn',
+		'react/no-array-index-key': 'warn',
+		'capitalized-comments': ['off'],
 		'react/boolean-prop-naming': 0,
 		'comma-dangle': ['error', 'always-multiline'],
 		'no-unused-expressions': 0,
@@ -124,9 +131,17 @@ config.overrides[0] = {
 	},
 	rules: {
 		...cfg.rules,
+		'@typescript-eslint/lines-between-class-members': ['off'],
+		'@typescript-eslint/no-confusing-void-expression': ['off'],
+		'comma-dangle': ['off'],
+		'@typescript-eslint/prefer-optional-chain': ['warn'],
+		'@typescript-eslint/prefer-nullish-coalescing': ['warn'],
+		'@typescript-eslint/comma-dangle': ['error'],
 		'@typescript-eslint/indent': ['off'],
 		'@typescript-eslint/prefer-readonly': ['off'],
 		'@typescript-eslint/prefer-readonly-parameter-types': ['off'],
+		'@typescript-eslint/explicit-module-boundary-types': ['off'],
+		'@typescript-eslint/consistent-indexed-object-style': ['warn'],
 	},
 };
 

@@ -33,6 +33,18 @@
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
+    "react/no-array-index-key": [
+      "warn"
+    ],
+    "capitalized-comments": [
+      "off",
+      "always",
+      {
+        "ignorePattern": "pragma|ignore|prettier-ignore|webpack\\w+:|c8",
+        "ignoreInlineComments": true,
+        "ignoreConsecutiveComments": true
+      }
+    ],
     "react/boolean-prop-naming": [
       0,
       {
@@ -41,8 +53,8 @@
       }
     ],
     "comma-dangle": [
-      "error",
-      "always-multiline"
+      "off",
+      "never"
     ],
     "no-unused-expressions": [
       0
@@ -166,6 +178,13 @@
         "arrowParens": "avoid"
       }
     ],
+    "@typescript-eslint/no-confusing-void-expression": [
+      "off"
+    ],
+    "@typescript-eslint/comma-dangle": [
+      "error",
+      "never"
+    ],
     "@typescript-eslint/indent": [
       "off",
       "tab",
@@ -260,10 +279,6 @@
       {
         "allowSingleLine": false
       }
-    ],
-    "@typescript-eslint/comma-dangle": [
-      "error",
-      "never"
     ],
     "comma-spacing": [
       "off",
@@ -373,9 +388,6 @@
       "off"
     ],
     "@typescript-eslint/no-duplicate-imports": [
-      "error"
-    ],
-    "@typescript-eslint/no-confusing-void-expression": [
       "error"
     ],
     "@typescript-eslint/no-dynamic-delete": [
@@ -1211,9 +1223,6 @@
     "react/no-access-state-in-setstate": [
       "error"
     ],
-    "react/no-array-index-key": [
-      "error"
-    ],
     "react/no-children-prop": [
       "error"
     ],
@@ -1632,15 +1641,6 @@
       "smalloc",
       "sys",
       "colors"
-    ],
-    "capitalized-comments": [
-      "error",
-      "always",
-      {
-        "ignorePattern": "pragma|ignore|prettier-ignore|webpack\\w+:|c8",
-        "ignoreInlineComments": true,
-        "ignoreConsecutiveComments": true
-      }
     ],
     "func-name-matching": [
       "error",
