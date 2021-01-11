@@ -270,6 +270,9 @@
     "vue/template-curly-spacing": [
       "off"
     ],
+    "unicorn/empty-brace-spaces": [
+      "off"
+    ],
     "unicorn/no-nested-ternary": [
       "off"
     ],
@@ -833,7 +836,8 @@
     "react/jsx-key": [
       "error",
       {
-        "checkFragmentShorthand": true
+        "checkFragmentShorthand": true,
+        "checkKeyMustBeforeSpread": false
       }
     ],
     "react/jsx-no-bind": [
@@ -988,6 +992,15 @@
     "no-unsafe-negation": [
       "error"
     ],
+    "no-unsafe-optional-chaining": [
+      "error",
+      {
+        "disallowArithmeticOperators": true
+      }
+    ],
+    "no-useless-backreference": [
+      "error"
+    ],
     "use-isnan": [
       "error"
     ],
@@ -1019,6 +1032,9 @@
       "warn"
     ],
     "default-case": [
+      "error"
+    ],
+    "default-case-last": [
       "error"
     ],
     "default-param-last": [
@@ -1104,6 +1120,9 @@
       "error"
     ],
     "no-new-wrappers": [
+      "error"
+    ],
+    "no-nonoctal-decimal-escape": [
       "error"
     ],
     "no-new": [
