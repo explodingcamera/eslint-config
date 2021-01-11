@@ -93,6 +93,7 @@ const config = {
 			'error',
 			{
 				trailingComma: 'all',
+				endOfLine: 'auto',
 				useTabs: true,
 				singleQuote: true,
 				printWidth: 80,
