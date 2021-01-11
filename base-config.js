@@ -131,12 +131,21 @@ config.overrides[0] = {
 	},
 	rules: {
 		...cfg.rules,
+		'@typescript-eslint/restrict-template-expressions': [
+			'error',
+			{
+				allowNumber: true,
+				allowNullish: true,
+			},
+		],
+		'@typescript-eslint/member-ordering': 'off',
+		'@typescript-eslint/quotes': 'off',
 		'@typescript-eslint/lines-between-class-members': ['off'],
 		'@typescript-eslint/no-confusing-void-expression': ['off'],
 		'comma-dangle': ['off'],
 		'@typescript-eslint/prefer-optional-chain': ['warn'],
 		'@typescript-eslint/prefer-nullish-coalescing': ['warn'],
-		'@typescript-eslint/comma-dangle': ['error'],
+		'@typescript-eslint/comma-dangle': ['off'],
 		'@typescript-eslint/indent': ['off'],
 		'@typescript-eslint/prefer-readonly': ['off'],
 		'@typescript-eslint/prefer-readonly-parameter-types': ['off'],

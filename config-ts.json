@@ -198,6 +198,20 @@
         "arrowParens": "avoid"
       }
     ],
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        "allowNumber": true,
+        "allowNullish": true
+      }
+    ],
+    "@typescript-eslint/member-ordering": [
+      "off"
+    ],
+    "@typescript-eslint/quotes": [
+      "off",
+      "single"
+    ],
     "@typescript-eslint/lines-between-class-members": [
       "off",
       "always",
@@ -215,7 +229,7 @@
       "warn"
     ],
     "@typescript-eslint/comma-dangle": [
-      "error",
+      "off",
       "never"
     ],
     "@typescript-eslint/indent": [
@@ -385,9 +399,6 @@
           "requireLast": false
         }
       }
-    ],
-    "@typescript-eslint/member-ordering": [
-      "error"
     ],
     "camelcase": [
       "off",
@@ -589,18 +600,8 @@
       "off",
       "single"
     ],
-    "@typescript-eslint/quotes": [
-      "error",
-      "single"
-    ],
     "@typescript-eslint/restrict-plus-operands": [
       "error"
-    ],
-    "@typescript-eslint/restrict-template-expressions": [
-      "error",
-      {
-        "allowNumber": true
-      }
     ],
     "@typescript-eslint/return-await": [
       "error"
