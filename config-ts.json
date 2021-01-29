@@ -903,6 +903,9 @@
       "off",
       "tab"
     ],
+    "react/jsx-newline": [
+      "off"
+    ],
     "react/jsx-props-no-multi-spaces": [
       "off"
     ],
@@ -967,6 +970,9 @@
       "off"
     ],
     "@typescript-eslint/no-extra-parens": [
+      "off"
+    ],
+    "@typescript-eslint/object-curly-spacing": [
       "off"
     ],
     "curly": [
