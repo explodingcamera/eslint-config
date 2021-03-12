@@ -29,6 +29,10 @@
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
     "radix": [
       "warn"
     ],
@@ -406,10 +410,6 @@
     ],
     "object-curly-newline": [
       "off"
-    ],
-    "object-curly-spacing": [
-      "off",
-      "never"
     ],
     "object-property-newline": [
       "off"

@@ -33,6 +33,7 @@ const config = {
 		'prettier',
 	],
 	rules: {
+		"object-curly-spacing": ["error", "always"],
 		radix: 'warn',
 		'default-case': ['off'],
 		'new-cap': 'warn',
@@ -147,6 +148,8 @@ config.overrides[0] = {
 		'@typescript-eslint/prefer-readonly-parameter-types': ['off'],
 		'@typescript-eslint/explicit-module-boundary-types': ['off'],
 		'@typescript-eslint/consistent-indexed-object-style': ['warn'],
+		"object-curly-spacing": "off",
+		"@typescript-eslint/object-curly-spacing": ["error", "always"],
 	},
 };
 

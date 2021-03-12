@@ -33,6 +33,10 @@
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
+    "object-curly-spacing": [
+      "off",
+      "never"
+    ],
     "radix": [
       "warn"
     ],
@@ -266,6 +270,10 @@
     ],
     "@typescript-eslint/consistent-indexed-object-style": [
       "warn"
+    ],
+    "@typescript-eslint/object-curly-spacing": [
+      "error",
+      "always"
     ],
     "@typescript-eslint/adjacent-overload-signatures": [
       "error"
@@ -569,14 +577,6 @@
     ],
     "@typescript-eslint/no-useless-constructor": [
       "error"
-    ],
-    "object-curly-spacing": [
-      "off",
-      "never"
-    ],
-    "@typescript-eslint/object-curly-spacing": [
-      "error",
-      "never"
     ],
     "@typescript-eslint/no-var-requires": [
       "error"
