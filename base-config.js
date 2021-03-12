@@ -14,6 +14,7 @@ const config = {
 	},
 	parser: '@babel/eslint-parser',
 	parserOptions: {
+		requireConfigFile: false,
 		ecmaVersion: 2020,
 		sourceType: 'module',
 		ecmaFeatures: {
@@ -33,7 +34,7 @@ const config = {
 		'prettier',
 	],
 	rules: {
-		"object-curly-spacing": ["error", "always"],
+		'object-curly-spacing': ['error', 'always'],
 		radix: 'warn',
 		'default-case': ['off'],
 		'new-cap': 'warn',
@@ -148,8 +149,8 @@ config.overrides[0] = {
 		'@typescript-eslint/prefer-readonly-parameter-types': ['off'],
 		'@typescript-eslint/explicit-module-boundary-types': ['off'],
 		'@typescript-eslint/consistent-indexed-object-style': ['warn'],
-		"object-curly-spacing": "off",
-		"@typescript-eslint/object-curly-spacing": ["error", "always"],
+		'object-curly-spacing': 'off',
+		'@typescript-eslint/object-curly-spacing': ['error', 'always'],
 	},
 };
 
