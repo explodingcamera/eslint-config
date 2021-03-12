@@ -80,6 +80,7 @@ const config = {
 		'import/no-unresolved': 0,
 		'import/default': 0,
 		'import/namespace': 0,
+		'import/named': 0,
 		'promise/always-return': 0,
 		'promise/prefer-await-to-then': 0,
 		'require-atomic-updates': 'warn',

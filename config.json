@@ -184,6 +184,9 @@
     "import/namespace": [
       0
     ],
+    "import/named": [
+      0
+    ],
     "promise/always-return": [
       0
     ],
@@ -1475,9 +1478,6 @@
     ],
     "import/no-duplicates": [
       1
-    ],
-    "import/named": [
-      2
     ],
     "import/export": [
       2
