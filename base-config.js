@@ -142,7 +142,7 @@ config.overrides[0] = {
 		'@typescript-eslint/no-confusing-void-expression': ['off'],
 		'comma-dangle': ['off'],
 		'@typescript-eslint/prefer-optional-chain': ['warn'],
-		'@typescript-eslint/prefer-nullish-coalescing': ['warn'],
+		'@typescript-eslint/prefer-nullish-coalescing': 'off',
 		'@typescript-eslint/comma-dangle': ['off'],
 		'@typescript-eslint/indent': ['off'],
 		'@typescript-eslint/prefer-readonly': ['off'],

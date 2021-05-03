@@ -18,7 +18,8 @@
     },
     "warnOnUnsupportedTypeScriptVersion": false,
     "jsx": true,
-    "project": "tsconfig.json"
+    "project": "tsconfig.json",
+    "requireConfigFile": false
   },
   "plugins": [
     "react",
@@ -55,7 +56,11 @@
       "warn"
     ],
     "prefer-const": [
-      "warn"
+      "warn",
+      {
+        "destructuring": "all",
+        "ignoreReadBeforeAssign": false
+      }
     ],
     "react/no-array-index-key": [
       "warn"
@@ -243,7 +248,7 @@
       "warn"
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
-      "warn"
+      "off"
     ],
     "@typescript-eslint/comma-dangle": [
       "off",
@@ -466,6 +471,9 @@
         "allowSingleExtends": true
       }
     ],
+    "@typescript-eslint/no-extra-non-null-assertion": [
+      "error"
+    ],
     "no-extra-parens": [
       "off"
     ],
@@ -528,6 +536,18 @@
         "checksVoidReturn": false
       }
     ],
+    "@typescript-eslint/no-non-null-asserted-optional-chain": [
+      "error"
+    ],
+    "@typescript-eslint/no-non-null-assertion": [
+      "error"
+    ],
+    "no-redeclare": [
+      "off"
+    ],
+    "@typescript-eslint/no-redeclare": [
+      "error"
+    ],
     "@typescript-eslint/no-this-alias": [
       "error",
       {
@@ -558,11 +578,25 @@
     "@typescript-eslint/no-unnecessary-type-constraint": [
       "error"
     ],
+    "@typescript-eslint/no-unsafe-argument": [
+      "error"
+    ],
     "@typescript-eslint/no-unused-expressions": [
       "error"
     ],
     "no-unused-vars": [
       "off",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true,
+        "argsIgnorePattern": "^_",
+        "caughtErrors": "all",
+        "caughtErrorsIgnorePattern": "^_$"
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
       {
         "vars": "all",
         "args": "after-used",
@@ -681,9 +715,6 @@
     "@typescript-eslint/unified-signatures": [
       "error"
     ],
-    "no-redeclare": [
-      "off"
-    ],
     "no-undef": [
       "off",
       {
@@ -696,20 +727,8 @@
     "@typescript-eslint/no-explicit-any": [
       "warn"
     ],
-    "@typescript-eslint/no-extra-non-null-assertion": [
-      "error"
-    ],
     "@typescript-eslint/no-namespace": [
       "error"
-    ],
-    "@typescript-eslint/no-non-null-asserted-optional-chain": [
-      "error"
-    ],
-    "@typescript-eslint/no-non-null-assertion": [
-      "warn"
-    ],
-    "@typescript-eslint/no-unused-vars": [
-      "warn"
     ],
     "constructor-super": [
       "off"
@@ -1021,6 +1040,12 @@
       "off",
       "both"
     ],
+    "@babel/object-curly-spacing": [
+      "off"
+    ],
+    "@babel/semi": [
+      "off"
+    ],
     "@typescript-eslint/no-extra-parens": [
       "off"
     ],
@@ -1043,6 +1068,9 @@
       "off"
     ],
     "flowtype/object-type-delimiter": [
+      "off"
+    ],
+    "flowtype/quotes": [
       "off"
     ],
     "flowtype/semi": [
@@ -1332,7 +1360,12 @@
       "error"
     ],
     "react/style-prop-object": [
-      "error"
+      "error",
+      {
+        "allow": [
+          "FormattedNumber"
+        ]
+      }
     ],
     "react/void-dom-elements-no-children": [
       "error"
@@ -1629,6 +1662,9 @@
     "no-useless-call": [
       "error"
     ],
+    "no-useless-catch": [
+      "error"
+    ],
     "no-useless-concat": [
       "error"
     ],
@@ -1680,7 +1716,9 @@
       "domain",
       "freelist",
       "smalloc",
+      "punycode",
       "sys",
+      "querystring",
       "colors"
     ],
     "func-name-matching": [
@@ -1718,10 +1756,6 @@
     "no-new-object": [
       "error"
     ],
-    "no-restricted-syntax": [
-      "error",
-      "WithStatement"
-    ],
     "no-unneeded-ternary": [
       "error"
     ],
@@ -1742,6 +1776,9 @@
       }
     ],
     "prefer-exponentiation-operator": [
+      "error"
+    ],
+    "prefer-object-spread": [
       "error"
     ],
     "spaced-comment": [
@@ -1784,6 +1821,36 @@
       }
     ],
     "no-useless-rename": [
+      "error"
+    ],
+    "object-shorthand": [
+      "error",
+      "always"
+    ],
+    "prefer-arrow-callback": [
+      "error",
+      {
+        "allowNamedFunctions": true,
+        "allowUnboundThis": true
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "prefer-numeric-literals": [
       "error"
     ],
     "require-yield": [
