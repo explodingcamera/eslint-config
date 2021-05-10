@@ -129,24 +129,15 @@ config.overrides[0] = {
 	},
 	rules: {
 		...cfg.rules,
-		'@typescript-eslint/restrict-template-expressions': [
-			'error',
-			{
-				allowNumber: true,
-				allowNullish: true,
-			},
-		],
-		'no-unused-vars': [
-			'warn',
-			{
-				vars: 'all',
-				args: 'after-used',
-				ignoreRestSiblings: true,
-				argsIgnorePattern: '^_',
-				caughtErrors: 'all',
-				caughtErrorsIgnorePattern: '^_$',
-			},
-		],
+
+		'@typescript-eslint/comma-dangle': ['off'],
+		'@typescript-eslint/consistent-indexed-object-style': ['warn'],
+		'@typescript-eslint/explicit-module-boundary-types': ['off'],
+		'@typescript-eslint/indent': ['off'],
+		'@typescript-eslint/lines-between-class-members': ['off'],
+		'@typescript-eslint/member-ordering': 'off',
+		'@typescript-eslint/no-confusing-void-expression': ['off'],
+		'@typescript-eslint/no-unsafe-assignment': 'off',
 		'@typescript-eslint/no-unused-vars': [
 			'warn',
 			{
@@ -158,21 +149,32 @@ config.overrides[0] = {
 				caughtErrorsIgnorePattern: '^_$',
 			},
 		],
-		'@typescript-eslint/member-ordering': 'off',
-		'@typescript-eslint/quotes': 'off',
-		'@typescript-eslint/lines-between-class-members': ['off'],
-		'@typescript-eslint/no-confusing-void-expression': ['off'],
-		'comma-dangle': ['off'],
-		'@typescript-eslint/prefer-optional-chain': ['warn'],
+		'@typescript-eslint/object-curly-spacing': ['error', 'always'],
 		'@typescript-eslint/prefer-nullish-coalescing': 'off',
-		'@typescript-eslint/comma-dangle': ['off'],
-		'@typescript-eslint/indent': ['off'],
+		'@typescript-eslint/prefer-optional-chain': ['warn'],
 		'@typescript-eslint/prefer-readonly': ['off'],
 		'@typescript-eslint/prefer-readonly-parameter-types': ['off'],
-		'@typescript-eslint/explicit-module-boundary-types': ['off'],
-		'@typescript-eslint/consistent-indexed-object-style': ['warn'],
+		'@typescript-eslint/quotes': 'off',
+		'@typescript-eslint/restrict-template-expressions': [
+			'error',
+			{
+				allowNumber: true,
+				allowNullish: true,
+			},
+		],
+		'comma-dangle': ['off'],
+		'no-unused-vars': [
+			'warn',
+			{
+				vars: 'all',
+				args: 'after-used',
+				ignoreRestSiblings: true,
+				argsIgnorePattern: '^_',
+				caughtErrors: 'all',
+				caughtErrorsIgnorePattern: '^_$',
+			},
+		],
 		'object-curly-spacing': 'off',
-		'@typescript-eslint/object-curly-spacing': ['error', 'always'],
 	},
 };
 

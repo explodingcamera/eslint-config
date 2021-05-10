@@ -220,39 +220,15 @@
         "arrowParens": "avoid"
       }
     ],
-    "@typescript-eslint/restrict-template-expressions": [
-      "error",
-      {
-        "allowNumber": true,
-        "allowNullish": true
-      }
-    ],
-    "@typescript-eslint/member-ordering": [
-      "off"
-    ],
-    "@typescript-eslint/quotes": [
-      "off",
-      "single"
-    ],
-    "@typescript-eslint/lines-between-class-members": [
-      "off",
-      "always",
-      {
-        "exceptAfterSingleLine": true
-      }
-    ],
-    "@typescript-eslint/no-confusing-void-expression": [
-      "off"
-    ],
-    "@typescript-eslint/prefer-optional-chain": [
-      "warn"
-    ],
-    "@typescript-eslint/prefer-nullish-coalescing": [
-      "off"
-    ],
     "@typescript-eslint/comma-dangle": [
       "off",
       "never"
+    ],
+    "@typescript-eslint/consistent-indexed-object-style": [
+      "warn"
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": [
+      "off"
     ],
     "@typescript-eslint/indent": [
       "off",
@@ -264,21 +240,70 @@
         "ignoreComments": false
       }
     ],
+    "@typescript-eslint/lines-between-class-members": [
+      "off",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "@typescript-eslint/member-ordering": [
+      "off"
+    ],
+    "@typescript-eslint/no-confusing-void-expression": [
+      "off"
+    ],
+    "@typescript-eslint/no-unsafe-assignment": [
+      "off"
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true,
+        "argsIgnorePattern": "^_",
+        "caughtErrors": "all",
+        "caughtErrorsIgnorePattern": "^_$"
+      }
+    ],
+    "@typescript-eslint/object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "@typescript-eslint/prefer-nullish-coalescing": [
+      "off"
+    ],
+    "@typescript-eslint/prefer-optional-chain": [
+      "warn"
+    ],
     "@typescript-eslint/prefer-readonly": [
       "off"
     ],
     "@typescript-eslint/prefer-readonly-parameter-types": [
       "off"
     ],
-    "@typescript-eslint/explicit-module-boundary-types": [
-      "off"
+    "@typescript-eslint/quotes": [
+      "off",
+      "single"
     ],
-    "@typescript-eslint/consistent-indexed-object-style": [
-      "warn"
-    ],
-    "@typescript-eslint/object-curly-spacing": [
+    "@typescript-eslint/restrict-template-expressions": [
       "error",
-      "always"
+      {
+        "allowNumber": true,
+        "allowNullish": true
+      }
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true,
+        "argsIgnorePattern": "^_",
+        "caughtErrors": "all",
+        "caughtErrorsIgnorePattern": "^_$"
+      }
     ],
     "@typescript-eslint/adjacent-overload-signatures": [
       "error"
@@ -536,6 +561,9 @@
         "checksVoidReturn": false
       }
     ],
+    "@typescript-eslint/no-namespace": [
+      "error"
+    ],
     "@typescript-eslint/no-non-null-asserted-optional-chain": [
       "error"
     ],
@@ -546,6 +574,9 @@
       "off"
     ],
     "@typescript-eslint/no-redeclare": [
+      "error"
+    ],
+    "@typescript-eslint/no-require-imports": [
       "error"
     ],
     "@typescript-eslint/no-this-alias": [
@@ -581,30 +612,17 @@
     "@typescript-eslint/no-unsafe-argument": [
       "error"
     ],
-    "@typescript-eslint/no-unused-expressions": [
+    "@typescript-eslint/no-unsafe-call": [
       "error"
     ],
-    "no-unused-vars": [
-      "off",
-      {
-        "vars": "all",
-        "args": "after-used",
-        "ignoreRestSiblings": true,
-        "argsIgnorePattern": "^_",
-        "caughtErrors": "all",
-        "caughtErrorsIgnorePattern": "^_$"
-      }
+    "@typescript-eslint/no-unsafe-member-access": [
+      "error"
     ],
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        "vars": "all",
-        "args": "after-used",
-        "ignoreRestSiblings": true,
-        "argsIgnorePattern": "^_",
-        "caughtErrors": "all",
-        "caughtErrorsIgnorePattern": "^_$"
-      }
+    "@typescript-eslint/no-unsafe-return": [
+      "error"
+    ],
+    "@typescript-eslint/no-unused-expressions": [
+      "error"
     ],
     "no-useless-constructor": [
       "off"
@@ -703,7 +721,9 @@
     "@typescript-eslint/triple-slash-reference": [
       "error",
       {
-        "path": "never"
+        "path": "never",
+        "types": "never",
+        "lib": "never"
       }
     ],
     "@typescript-eslint/type-annotation-spacing": [
@@ -726,9 +746,6 @@
     ],
     "@typescript-eslint/no-explicit-any": [
       "warn"
-    ],
-    "@typescript-eslint/no-namespace": [
-      "error"
     ],
     "constructor-super": [
       "off"
