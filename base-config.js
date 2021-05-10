@@ -136,6 +136,28 @@ config.overrides[0] = {
 				allowNullish: true,
 			},
 		],
+		'no-unused-vars': [
+			'warn',
+			{
+				vars: 'all',
+				args: 'after-used',
+				ignoreRestSiblings: true,
+				argsIgnorePattern: '^_',
+				caughtErrors: 'all',
+				caughtErrorsIgnorePattern: '^_$',
+			},
+		],
+		'@typescript-eslint/no-unused-vars': [
+			'warn',
+			{
+				vars: 'all',
+				args: 'after-used',
+				ignoreRestSiblings: true,
+				argsIgnorePattern: '^_',
+				caughtErrors: 'all',
+				caughtErrorsIgnorePattern: '^_$',
+			},
+		],
 		'@typescript-eslint/member-ordering': 'off',
 		'@typescript-eslint/quotes': 'off',
 		'@typescript-eslint/lines-between-class-members': ['off'],
