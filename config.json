@@ -424,7 +424,7 @@
     ],
     "operator-linebreak": [
       "off",
-      "after"
+      "before"
     ],
     "padded-blocks": [
       "off",
@@ -1423,6 +1423,9 @@
           "balanced": true
         }
       }
+    ],
+    "arrow-body-style": [
+      "error"
     ],
     "constructor-super": [
       "error"
