@@ -1066,7 +1066,10 @@
       "error"
     ],
     "no-unsafe-negation": [
-      "error"
+      "error",
+      {
+        "enforceForOrderingRelations": true
+      }
     ],
     "no-unsafe-optional-chaining": [
       "error",
