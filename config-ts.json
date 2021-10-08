@@ -248,7 +248,56 @@
       }
     ],
     "@typescript-eslint/member-ordering": [
-      "off"
+      "off",
+      {
+        "default": [
+          "signature",
+          "public-static-field",
+          "public-static-method",
+          "protected-static-field",
+          "protected-static-method",
+          "private-static-field",
+          "private-static-method",
+          "static-field",
+          "static-method",
+          "public-decorated-field",
+          "public-instance-field",
+          "public-abstract-field",
+          "public-field",
+          "protected-decorated-field",
+          "protected-instance-field",
+          "protected-abstract-field",
+          "protected-field",
+          "private-decorated-field",
+          "private-instance-field",
+          "private-abstract-field",
+          "private-field",
+          "instance-field",
+          "abstract-field",
+          "decorated-field",
+          "field",
+          "public-constructor",
+          "protected-constructor",
+          "private-constructor",
+          "constructor",
+          "public-decorated-method",
+          "public-instance-method",
+          "public-abstract-method",
+          "public-method",
+          "protected-decorated-method",
+          "protected-instance-method",
+          "protected-abstract-method",
+          "protected-method",
+          "private-decorated-method",
+          "private-instance-method",
+          "private-abstract-method",
+          "private-method",
+          "instance-method",
+          "abstract-method",
+          "decorated-method",
+          "method"
+        ]
+      }
     ],
     "@typescript-eslint/no-confusing-void-expression": [
       "off"
@@ -476,6 +525,78 @@
         "ignoreGlobals": false
       }
     ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": [
+          "variable",
+          "function",
+          "classProperty",
+          "objectLiteralProperty",
+          "parameterProperty",
+          "classMethod",
+          "objectLiteralMethod",
+          "typeMethod",
+          "accessor"
+        ],
+        "format": [
+          "strictCamelCase"
+        ],
+        "leadingUnderscore": "allowSingleOrDouble",
+        "trailingUnderscore": "allow",
+        "filter": {
+          "regex": "[- ]",
+          "match": false
+        }
+      },
+      {
+        "selector": "typeLike",
+        "format": [
+          "StrictPascalCase"
+        ]
+      },
+      {
+        "selector": "variable",
+        "types": [
+          "boolean"
+        ],
+        "format": [
+          "StrictPascalCase"
+        ],
+        "prefix": [
+          "is",
+          "has",
+          "can",
+          "should",
+          "will",
+          "did"
+        ]
+      },
+      {
+        "selector": "interface",
+        "filter": "^(?!I)[A-Z]",
+        "format": [
+          "StrictPascalCase"
+        ]
+      },
+      {
+        "selector": "typeParameter",
+        "filter": "^T$|^[A-Z][a-zA-Z]+$",
+        "format": [
+          "StrictPascalCase"
+        ]
+      },
+      {
+        "selector": [
+          "classProperty",
+          "objectLiteralProperty"
+        ],
+        "format": null,
+        "modifiers": [
+          "requiresQuotes"
+        ]
+      }
+    ],
     "@typescript-eslint/no-base-to-string": [
       "error"
     ],
@@ -567,6 +688,9 @@
     "@typescript-eslint/no-inferrable-types": [
       "error"
     ],
+    "@typescript-eslint/no-meaningless-void-operator": [
+      "error"
+    ],
     "@typescript-eslint/no-misused-new": [
       "error"
     ],
@@ -580,6 +704,9 @@
     "@typescript-eslint/no-namespace": [
       "error"
     ],
+    "@typescript-eslint/no-non-null-asserted-nullish-coalescing": [
+      "error"
+    ],
     "@typescript-eslint/no-non-null-asserted-optional-chain": [
       "error"
     ],
@@ -588,6 +715,29 @@
     ],
     "@typescript-eslint/no-redeclare": [
       "error"
+    ],
+    "no-restricted-imports": [
+      "off",
+      "domain",
+      "freelist",
+      "smalloc",
+      "punycode",
+      "sys",
+      "querystring",
+      "colors"
+    ],
+    "@typescript-eslint/no-restricted-imports": [
+      "error",
+      [
+        "error",
+        "domain",
+        "freelist",
+        "smalloc",
+        "punycode",
+        "sys",
+        "querystring",
+        "colors"
+      ]
     ],
     "@typescript-eslint/no-require-imports": [
       "error"
@@ -608,7 +758,7 @@
       "error"
     ],
     "no-constant-condition": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-unnecessary-qualifier": [
       "error"
@@ -630,6 +780,22 @@
     ],
     "@typescript-eslint/no-useless-constructor": [
       "error"
+    ],
+    "padding-line-between-statements": [
+      "off",
+      {
+        "blankLine": "always",
+        "prev": "multiline-block-like",
+        "next": "*"
+      }
+    ],
+    "@typescript-eslint/padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "multiline-block-like",
+        "next": "*"
+      }
     ],
     "@typescript-eslint/no-var-requires": [
       "error"
@@ -1429,7 +1595,9 @@
     "react/jsx-no-target-blank": [
       "error",
       {
-        "warnOnSpreadAttributes": true
+        "warnOnSpreadAttributes": true,
+        "links": true,
+        "forms": false
       }
     ],
     "react/jsx-no-undef": [
@@ -1732,16 +1900,6 @@
     "no-buffer-constructor": [
       "error"
     ],
-    "no-restricted-imports": [
-      "error",
-      "domain",
-      "freelist",
-      "smalloc",
-      "punycode",
-      "sys",
-      "querystring",
-      "colors"
-    ],
     "func-name-matching": [
       "error",
       {
@@ -1768,6 +1926,9 @@
     "max-statements-per-line": [
       "error"
     ],
+    "no-bitwise": [
+      "error"
+    ],
     "no-lonely-if": [
       "error"
     ],
@@ -1787,14 +1948,6 @@
     "operator-assignment": [
       "error",
       "always"
-    ],
-    "padding-line-between-statements": [
-      "error",
-      {
-        "blankLine": "always",
-        "prev": "multiline-block-like",
-        "next": "*"
-      }
     ],
     "prefer-exponentiation-operator": [
       "error"

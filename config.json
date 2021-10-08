@@ -938,7 +938,9 @@
     "react/jsx-no-target-blank": [
       "error",
       {
-        "warnOnSpreadAttributes": true
+        "warnOnSpreadAttributes": true,
+        "links": true,
+        "forms": false
       }
     ],
     "react/jsx-no-undef": [
@@ -1361,6 +1363,9 @@
       "error"
     ],
     "no-array-constructor": [
+      "error"
+    ],
+    "no-bitwise": [
       "error"
     ],
     "no-lonely-if": [
