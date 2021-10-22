@@ -314,6 +314,78 @@
     "@typescript-eslint/no-unsafe-return": [
       "off"
     ],
+    "@typescript-eslint/naming-convention": [
+      "off",
+      {
+        "selector": [
+          "variable",
+          "function",
+          "classProperty",
+          "objectLiteralProperty",
+          "parameterProperty",
+          "classMethod",
+          "objectLiteralMethod",
+          "typeMethod",
+          "accessor"
+        ],
+        "format": [
+          "strictCamelCase"
+        ],
+        "leadingUnderscore": "allowSingleOrDouble",
+        "trailingUnderscore": "allow",
+        "filter": {
+          "regex": "[- ]",
+          "match": false
+        }
+      },
+      {
+        "selector": "typeLike",
+        "format": [
+          "StrictPascalCase"
+        ]
+      },
+      {
+        "selector": "variable",
+        "types": [
+          "boolean"
+        ],
+        "format": [
+          "StrictPascalCase"
+        ],
+        "prefix": [
+          "is",
+          "has",
+          "can",
+          "should",
+          "will",
+          "did"
+        ]
+      },
+      {
+        "selector": "interface",
+        "filter": "^(?!I)[A-Z]",
+        "format": [
+          "StrictPascalCase"
+        ]
+      },
+      {
+        "selector": "typeParameter",
+        "filter": "^T$|^[A-Z][a-zA-Z]+$",
+        "format": [
+          "StrictPascalCase"
+        ]
+      },
+      {
+        "selector": [
+          "classProperty",
+          "objectLiteralProperty"
+        ],
+        "format": null,
+        "modifiers": [
+          "requiresQuotes"
+        ]
+      }
+    ],
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
@@ -523,78 +595,6 @@
         "ignoreDestructuring": false,
         "ignoreImports": false,
         "ignoreGlobals": false
-      }
-    ],
-    "@typescript-eslint/naming-convention": [
-      "error",
-      {
-        "selector": [
-          "variable",
-          "function",
-          "classProperty",
-          "objectLiteralProperty",
-          "parameterProperty",
-          "classMethod",
-          "objectLiteralMethod",
-          "typeMethod",
-          "accessor"
-        ],
-        "format": [
-          "strictCamelCase"
-        ],
-        "leadingUnderscore": "allowSingleOrDouble",
-        "trailingUnderscore": "allow",
-        "filter": {
-          "regex": "[- ]",
-          "match": false
-        }
-      },
-      {
-        "selector": "typeLike",
-        "format": [
-          "StrictPascalCase"
-        ]
-      },
-      {
-        "selector": "variable",
-        "types": [
-          "boolean"
-        ],
-        "format": [
-          "StrictPascalCase"
-        ],
-        "prefix": [
-          "is",
-          "has",
-          "can",
-          "should",
-          "will",
-          "did"
-        ]
-      },
-      {
-        "selector": "interface",
-        "filter": "^(?!I)[A-Z]",
-        "format": [
-          "StrictPascalCase"
-        ]
-      },
-      {
-        "selector": "typeParameter",
-        "filter": "^T$|^[A-Z][a-zA-Z]+$",
-        "format": [
-          "StrictPascalCase"
-        ]
-      },
-      {
-        "selector": [
-          "classProperty",
-          "objectLiteralProperty"
-        ],
-        "format": null,
-        "modifiers": [
-          "requiresQuotes"
-        ]
       }
     ],
     "@typescript-eslint/no-base-to-string": [
