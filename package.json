@@ -35,7 +35,7 @@
 		"@babel/preset-env": "^7.15.8",
 		"add": "2.0.6",
 		"babel-plugin-module-resolver": "4.0.0",
-		"eslint": "8.1.0",
+		"eslint": "7.32.0",
 		"eslint-config-prettier": "8.3.0",
 		"eslint-config-xo": "0.39.0",
 		"eslint-config-xo-react": "0.25.0",
@@ -44,7 +44,7 @@
 		"typescript": "4.4.4"
 	},
 	"peerDependencies": {
-		"eslint": "^8.0.0"
+		"eslint": "^7.0.0"
 	},
 	"optionalDependencies": {
 		"babel-plugin-module-resolver": "^4.1.0"
