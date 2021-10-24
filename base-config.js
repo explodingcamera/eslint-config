@@ -56,6 +56,7 @@ const config = {
 		'react/no-danger': 'warn',
 		'react/forbid-dom-props': 0,
 		'react/no-unescaped-entities': 0,
+		'react/function-component-definition': 0,
 		'react/jsx-max-props-per-line': [
 			'error',
 			{
@@ -65,12 +66,6 @@ const config = {
 		],
 		'react/no-deprecated': 'warn',
 		'react/jsx-sort-props': 0,
-		'unicorn/filename-case': [
-			'error',
-			{
-				case: 'kebabCase',
-			},
-		],
 		'unicorn/no-abusive-eslint-disable': 'warn',
 		'react/jsx-indent': 'off',
 		'react/jsx-fragments': 'off',
@@ -142,6 +137,7 @@ config.overrides[0] = {
 		'@typescript-eslint/no-unsafe-member-access': 'off',
 		'@typescript-eslint/no-unsafe-return': 'off',
 		'@typescript-eslint/naming-convention': 'off',
+		'@typescript-eslint/no-non-null-assertion': 'off',
 		'@typescript-eslint/no-unused-vars': [
 			'warn',
 			{

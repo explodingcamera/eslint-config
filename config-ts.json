@@ -133,6 +133,13 @@
     "react/no-unescaped-entities": [
       0
     ],
+    "react/function-component-definition": [
+      0,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
     "react/jsx-max-props-per-line": [
       "error",
       {
@@ -150,12 +157,6 @@
         "shorthandFirst": true,
         "noSortAlphabetically": true,
         "reservedFirst": true
-      }
-    ],
-    "unicorn/filename-case": [
-      "error",
-      {
-        "case": "kebabCase"
       }
     ],
     "unicorn/no-abusive-eslint-disable": [
@@ -385,6 +386,9 @@
           "requiresQuotes"
         ]
       }
+    ],
+    "@typescript-eslint/no-non-null-assertion": [
+      "off"
     ],
     "@typescript-eslint/no-unused-vars": [
       "warn",
@@ -909,9 +913,6 @@
       }
     ],
     "@typescript-eslint/no-explicit-any": [
-      "warn"
-    ],
-    "@typescript-eslint/no-non-null-assertion": [
       "warn"
     ],
     "constructor-super": [
@@ -1468,13 +1469,6 @@
     ],
     "react/default-props-match-prop-types": [
       "error"
-    ],
-    "react/function-component-definition": [
-      "error",
-      {
-        "namedComponents": "arrow-function",
-        "unnamedComponents": "arrow-function"
-      }
     ],
     "react/no-access-state-in-setstate": [
       "error"
