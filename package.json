@@ -44,7 +44,7 @@
 		"typescript": "4.4.4"
 	},
 	"peerDependencies": {
-		"eslint": "^7.0.0"
+		"eslint": "^8.0.0"
 	},
 	"optionalDependencies": {
 		"babel-plugin-module-resolver": "^4.1.0"
