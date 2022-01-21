@@ -816,6 +816,9 @@
     "react/no-access-state-in-setstate": [
       "error"
     ],
+    "react/no-arrow-function-lifecycle": [
+      "error"
+    ],
     "react/no-children-prop": [
       "error"
     ],
@@ -831,7 +834,13 @@
     "react/no-find-dom-node": [
       "error"
     ],
+    "react/no-invalid-html-attribute": [
+      "error"
+    ],
     "react/no-is-mounted": [
+      "error"
+    ],
+    "react/no-namespace": [
       "error"
     ],
     "react/no-redundant-should-component-update": [
@@ -933,8 +942,8 @@
       "error",
       {
         "warnOnSpreadAttributes": true,
-        "links": true,
-        "forms": false
+        "forms": true,
+        "links": true
       }
     ],
     "react/jsx-no-undef": [

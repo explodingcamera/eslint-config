@@ -495,12 +495,15 @@
             "fixWith": "Record<string, unknown>"
           },
           "Function": "Use a specific function type instead, like `() => void`.",
+          "null": {
+            "message": "Use `undefined` instead. See: https://github.com/sindresorhus/meta/issues/7",
+            "fixWith": "undefined"
+          },
           "[]": "Don't use the empty array type `[]`. It only allows empty arrays. Use `SomeType[]` instead.",
           "[[]]": "Don't use `[[]]`. It only allows an array with a single element which is an empty array. Use `SomeType[][]` instead.",
           "[[[]]]": "Don't use `[[[]]]`. Use `SomeType[][][]` instead.",
           "[[[[]]]]": "ur drunk 🤡",
-          "[[[[[]]]]]": "🦄💥",
-          "Omit": "Prefer the `Except` type in the `type-fest` package instead as it's stricter."
+          "[[[[[]]]]]": "🦄💥"
         }
       }
     ],
@@ -756,7 +759,11 @@
       "off"
     ],
     "@typescript-eslint/no-throw-literal": [
-      "error"
+      "error",
+      {
+        "allowThrowingAny": false,
+        "allowThrowingUnknown": false
+      }
     ],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
       "error"
@@ -842,7 +849,11 @@
       "single"
     ],
     "@typescript-eslint/restrict-plus-operands": [
-      "error"
+      "error",
+      {
+        "checkCompoundAssignments": true,
+        "allowAny": false
+      }
     ],
     "@typescript-eslint/return-await": [
       "error"
@@ -911,6 +922,15 @@
       {
         "typeof": true
       }
+    ],
+    "node/no-unsupported-features/es-syntax": [
+      "off"
+    ],
+    "node/no-unsupported-features/es-builtins": [
+      "off"
+    ],
+    "unicorn/no-null": [
+      "off"
     ],
     "@typescript-eslint/no-explicit-any": [
       "warn"
@@ -1473,6 +1493,9 @@
     "react/no-access-state-in-setstate": [
       "error"
     ],
+    "react/no-arrow-function-lifecycle": [
+      "error"
+    ],
     "react/no-children-prop": [
       "error"
     ],
@@ -1488,7 +1511,13 @@
     "react/no-find-dom-node": [
       "error"
     ],
+    "react/no-invalid-html-attribute": [
+      "error"
+    ],
     "react/no-is-mounted": [
+      "error"
+    ],
+    "react/no-namespace": [
       "error"
     ],
     "react/no-redundant-should-component-update": [
@@ -1590,8 +1619,8 @@
       "error",
       {
         "warnOnSpreadAttributes": true,
-        "links": true,
-        "forms": false
+        "forms": true,
+        "links": true
       }
     ],
     "react/jsx-no-undef": [
@@ -2091,7 +2120,7 @@
       }
     },
     "import/parsers": {
-      "@typescript-eslint/parser": [
+      "/home/henry/repos/eslint-config/node_modules/.pnpm/@typescript-eslint+parser@5.10.0_eslint@8.7.0+typescript@4.5.5/node_modules/@typescript-eslint/parser/dist/index.js": [
         ".ts",
         ".tsx"
       ]
