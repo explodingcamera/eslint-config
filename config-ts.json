@@ -105,6 +105,9 @@
         "exceptAfterSingleLine": true
       }
     ],
+    "react/react-in-jsx-scope": [
+      0
+    ],
     "react/jsx-child-element-spacing": [
       0
     ],
@@ -1556,9 +1559,6 @@
     "react/prop-types": [
       "error"
     ],
-    "react/react-in-jsx-scope": [
-      "error"
-    ],
     "react/require-default-props": [
       "error",
       {
@@ -2120,7 +2120,7 @@
       }
     },
     "import/parsers": {
-      "/home/henry/repos/eslint-config/node_modules/.pnpm/@typescript-eslint+parser@5.10.0_eslint@8.7.0+typescript@4.5.5/node_modules/@typescript-eslint/parser/dist/index.js": [
+      "/home/henry/repos/eslint-config/node_modules/@typescript-eslint/parser/dist/index.js": [
         ".ts",
         ".tsx"
       ]

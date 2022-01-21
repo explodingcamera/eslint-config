@@ -101,6 +101,9 @@
         "exceptAfterSingleLine": true
       }
     ],
+    "react/react-in-jsx-scope": [
+      0
+    ],
     "react/jsx-child-element-spacing": [
       0
     ],
@@ -877,9 +880,6 @@
       "error"
     ],
     "react/prop-types": [
-      "error"
-    ],
-    "react/react-in-jsx-scope": [
       "error"
     ],
     "react/require-default-props": [

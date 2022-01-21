@@ -47,6 +47,7 @@ const config = {
 		'no-unused-expressions': 0,
 		'no-return-assign': ['error', 'except-parens'],
 		'lines-between-class-members': 0,
+		'react/react-in-jsx-scope': 0,
 		'react/jsx-child-element-spacing': 0,
 		'react/jsx-one-expression-per-line': 0,
 		'react/destructuring-assignment': 0,
