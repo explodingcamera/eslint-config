@@ -99,6 +99,7 @@ const config = {
 			version: 'latest',
 		},
 		'import/resolver': {},
+		'import/parsers': {},
 	},
 };
 

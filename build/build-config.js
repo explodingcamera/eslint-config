@@ -29,6 +29,10 @@ eslint
 	.calculateConfigForFile('./sample.ts')
 	.then(configTS => {
 		configTS.parser = '@typescript-eslint/parser';
+		configTS.settings['import/parsers'] = {
+			'@typescript-eslint/parser': ['.ts', '.tsx'],
+		};
+
 		configTS = JSON.stringify(configTS, null, 2);
 
 		fs.writeFile('./config-ts.json', configTS, err => {

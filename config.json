@@ -1563,7 +1563,8 @@
     "react": {
       "version": "latest"
     },
-    "import/resolver": {}
+    "import/resolver": {},
+    "import/parsers": {}
   },
   "ignorePatterns": []
 }

@@ -2120,7 +2120,7 @@
       }
     },
     "import/parsers": {
-      "/home/henry/repos/eslint-config/node_modules/@typescript-eslint/parser/dist/index.js": [
+      "@typescript-eslint/parser": [
         ".ts",
         ".tsx"
       ]
