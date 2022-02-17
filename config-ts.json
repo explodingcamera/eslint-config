@@ -764,8 +764,8 @@
     "@typescript-eslint/no-throw-literal": [
       "error",
       {
-        "allowThrowingAny": false,
-        "allowThrowingUnknown": false
+        "allowThrowingUnknown": true,
+        "allowThrowingAny": false
       }
     ],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
@@ -2025,7 +2025,10 @@
     ],
     "object-shorthand": [
       "error",
-      "always"
+      "always",
+      {
+        "avoidExplicitReturnArrows": true
+      }
     ],
     "prefer-arrow-callback": [
       "error",

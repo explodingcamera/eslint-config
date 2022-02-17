@@ -1118,9 +1118,6 @@
     "default-case-last": [
       "error"
     ],
-    "default-param-last": [
-      "error"
-    ],
     "dot-notation": [
       "error"
     ],
@@ -1473,7 +1470,10 @@
     ],
     "object-shorthand": [
       "error",
-      "always"
+      "always",
+      {
+        "avoidExplicitReturnArrows": true
+      }
     ],
     "prefer-arrow-callback": [
       "error",
