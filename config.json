@@ -783,6 +783,9 @@
     "vue/operator-linebreak": [
       "off"
     ],
+    "vue/quote-props": [
+      "off"
+    ],
     "vue/script-indent": [
       "off"
     ],
