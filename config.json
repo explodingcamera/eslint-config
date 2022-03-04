@@ -155,7 +155,9 @@
         "callbacksLast": true,
         "shorthandFirst": true,
         "noSortAlphabetically": true,
-        "reservedFirst": true
+        "reservedFirst": true,
+        "multiline": "ignore",
+        "locale": "auto"
       }
     ],
     "unicorn/no-abusive-eslint-disable": [
@@ -574,6 +576,9 @@
     "@typescript-eslint/semi": [
       "off"
     ],
+    "@typescript-eslint/space-before-blocks": [
+      "off"
+    ],
     "@typescript-eslint/space-before-function-paren": [
       "off"
     ],
@@ -913,7 +918,8 @@
       "error",
       {
         "checkFragmentShorthand": true,
-        "checkKeyMustBeforeSpread": true
+        "checkKeyMustBeforeSpread": true,
+        "warnOnDuplicates": false
       }
     ],
     "react/jsx-no-bind": [

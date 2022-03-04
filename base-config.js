@@ -157,6 +157,7 @@ config.overrides[0] = {
 		'@typescript-eslint/prefer-readonly': ['off'],
 		'@typescript-eslint/prefer-readonly-parameter-types': ['off'],
 		'@typescript-eslint/quotes': 'off',
+		'@typescript-eslint/no-unnecessary-type-arguments': 'off', // this rule is broken
 		'@typescript-eslint/restrict-template-expressions': [
 			'error',
 			{

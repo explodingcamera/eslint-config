@@ -159,7 +159,9 @@
         "callbacksLast": true,
         "shorthandFirst": true,
         "noSortAlphabetically": true,
-        "reservedFirst": true
+        "reservedFirst": true,
+        "multiline": "ignore",
+        "locale": "auto"
       }
     ],
     "unicorn/no-abusive-eslint-disable": [
@@ -423,6 +425,9 @@
     "@typescript-eslint/quotes": [
       "off",
       "single"
+    ],
+    "@typescript-eslint/no-unnecessary-type-arguments": [
+      "off"
     ],
     "@typescript-eslint/restrict-template-expressions": [
       "error",
@@ -775,9 +780,6 @@
       "error"
     ],
     "@typescript-eslint/no-unnecessary-qualifier": [
-      "error"
-    ],
-    "@typescript-eslint/no-unnecessary-type-arguments": [
       "error"
     ],
     "@typescript-eslint/no-unnecessary-type-assertion": [
@@ -1260,6 +1262,9 @@
     "@typescript-eslint/no-extra-parens": [
       "off"
     ],
+    "@typescript-eslint/space-before-blocks": [
+      "off"
+    ],
     "babel/object-curly-spacing": [
       "off"
     ],
@@ -1590,7 +1595,8 @@
       "error",
       {
         "checkFragmentShorthand": true,
-        "checkKeyMustBeforeSpread": true
+        "checkKeyMustBeforeSpread": true,
+        "warnOnDuplicates": false
       }
     ],
     "react/jsx-no-bind": [
