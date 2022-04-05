@@ -55,6 +55,7 @@ const config = {
 		'react/static-property-placement': 'warn',
 		'react/state-in-constructor': 'warn',
 		'react/no-danger': 'warn',
+		'react/prop-types': 0,
 		'react/forbid-dom-props': 0,
 		'react/no-unescaped-entities': 0,
 		'react/function-component-definition': 0,

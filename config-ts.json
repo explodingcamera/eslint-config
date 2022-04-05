@@ -130,6 +130,9 @@
     "react/no-danger": [
       "warn"
     ],
+    "react/prop-types": [
+      0
+    ],
     "react/forbid-dom-props": [
       0
     ],
@@ -139,7 +142,7 @@
     "react/function-component-definition": [
       0,
       {
-        "namedComponents": "arrow-function",
+        "namedComponents": "function-declaration",
         "unnamedComponents": "arrow-function"
       }
     ],
@@ -1501,6 +1504,12 @@
     "react/default-props-match-prop-types": [
       "error"
     ],
+    "react/hook-use-state": [
+      "error"
+    ],
+    "react/iframe-missing-sandbox": [
+      "error"
+    ],
     "react/no-access-state-in-setstate": [
       "error"
     ],
@@ -1564,9 +1573,6 @@
     "react/prefer-read-only-props": [
       "error"
     ],
-    "react/prop-types": [
-      "error"
-    ],
     "react/require-default-props": [
       "error",
       {
@@ -1596,7 +1602,7 @@
       {
         "checkFragmentShorthand": true,
         "checkKeyMustBeforeSpread": true,
-        "warnOnDuplicates": false
+        "warnOnDuplicates": true
       }
     ],
     "react/jsx-no-bind": [
@@ -1640,7 +1646,11 @@
     ],
     "react/jsx-curly-brace-presence": [
       "error",
-      "never"
+      {
+        "props": "never",
+        "children": "never",
+        "propElementValues": "always"
+      }
     ],
     "react/jsx-pascal-case": [
       "error"
