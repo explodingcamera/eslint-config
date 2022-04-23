@@ -97,7 +97,7 @@ const config = {
 	},
 	settings: {
 		react: {
-			version: 'latest',
+			version: 'detect',
 		},
 		'import/resolver': {},
 		'import/parsers': {},
