@@ -30,24 +30,49 @@
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
-    "@typescript-eslint/triple-slash-reference": [
-      0
-    ],
-    "@typescript-eslint/no-explicit-any": [
-      0
-    ],
     "@next/next/no-img-element": [
       0
     ],
-    "object-curly-spacing": [
-      "error",
-      "always"
+    "babel/no-unused-expressions": [
+      1
     ],
-    "radix": [
-      "warn"
+    "capitalized-comments": [
+      "off",
+      "always",
+      {
+        "ignorePattern": "pragma|ignore|prettier-ignore|webpack\\w+:|c8",
+        "ignoreInlineComments": true,
+        "ignoreConsecutiveComments": true
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
     ],
     "default-case": [
       "off"
+    ],
+    "import/default": [
+      0
+    ],
+    "import/named": [
+      0
+    ],
+    "import/namespace": [
+      0
+    ],
+    "import/no-unresolved": [
+      0
+    ],
+    "import/order": [
+      0
+    ],
+    "lines-between-class-members": [
+      0,
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
     ],
     "new-cap": [
       "warn",
@@ -60,35 +85,9 @@
     "no-negated-condition": [
       "warn"
     ],
-    "prefer-const": [
-      "warn",
-      {
-        "destructuring": "all",
-        "ignoreReadBeforeAssign": false
-      }
-    ],
-    "react/no-array-index-key": [
-      "warn"
-    ],
-    "capitalized-comments": [
-      "off",
-      "always",
-      {
-        "ignorePattern": "pragma|ignore|prettier-ignore|webpack\\w+:|c8",
-        "ignoreInlineComments": true,
-        "ignoreConsecutiveComments": true
-      }
-    ],
-    "react/boolean-prop-naming": [
-      0,
-      {
-        "validateNested": true,
-        "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+"
-      }
-    ],
-    "comma-dangle": [
+    "no-return-assign": [
       "error",
-      "always-multiline"
+      "except-parens"
     ],
     "no-unused-expressions": [
       0,
@@ -99,25 +98,49 @@
         "allowTaggedTemplates": false
       }
     ],
-    "no-return-assign": [
+    "object-curly-spacing": [
       "error",
-      "except-parens"
+      "always"
     ],
-    "lines-between-class-members": [
-      0,
-      "always",
+    "prefer-const": [
+      "warn",
       {
-        "exceptAfterSingleLine": true
+        "destructuring": "all",
+        "ignoreReadBeforeAssign": false
       }
     ],
-    "react/react-in-jsx-scope": [
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "endOfLine": "auto",
+        "useTabs": true,
+        "singleQuote": true,
+        "printWidth": 80,
+        "arrowParens": "avoid"
+      }
+    ],
+    "promise/always-return": [
       0
     ],
-    "react/jsx-child-element-spacing": [
+    "promise/prefer-await-to-then": [
       0
     ],
-    "react/jsx-one-expression-per-line": [
-      0
+    "radix": [
+      "warn"
+    ],
+    "react-hooks/exhaustive-deps": [
+      "warn"
+    ],
+    "react-hooks/rules-of-hooks": [
+      "error"
+    ],
+    "react/boolean-prop-naming": [
+      0,
+      {
+        "validateNested": true,
+        "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+"
+      }
     ],
     "react/destructuring-assignment": [
       0
@@ -125,23 +148,7 @@
     "react/forbid-component-props": [
       0
     ],
-    "react/static-property-placement": [
-      "warn"
-    ],
-    "react/state-in-constructor": [
-      "warn",
-      "never"
-    ],
-    "react/no-danger": [
-      "warn"
-    ],
-    "react/prop-types": [
-      0
-    ],
     "react/forbid-dom-props": [
-      0
-    ],
-    "react/no-unescaped-entities": [
       0
     ],
     "react/function-component-definition": [
@@ -151,6 +158,21 @@
         "unnamedComponents": "arrow-function"
       }
     ],
+    "react/jsx-child-element-spacing": [
+      0
+    ],
+    "react/jsx-fragments": [
+      "off",
+      "syntax"
+    ],
+    "react/jsx-indent": [
+      "off",
+      "tab",
+      {
+        "checkAttributes": true,
+        "indentLogicalExpressions": true
+      }
+    ],
     "react/jsx-max-props-per-line": [
       "error",
       {
@@ -158,8 +180,8 @@
         "when": "multiline"
       }
     ],
-    "react/no-deprecated": [
-      "warn"
+    "react/jsx-one-expression-per-line": [
+      0
     ],
     "react/jsx-sort-props": [
       0,
@@ -172,67 +194,39 @@
         "locale": "auto"
       }
     ],
-    "unicorn/no-abusive-eslint-disable": [
+    "react/no-array-index-key": [
       "warn"
     ],
-    "react/jsx-indent": [
-      "off",
-      "tab",
-      {
-        "checkAttributes": true,
-        "indentLogicalExpressions": true
-      }
-    ],
-    "react/jsx-fragments": [
-      "off",
-      "syntax"
-    ],
-    "react-hooks/rules-of-hooks": [
-      "error"
-    ],
-    "react-hooks/exhaustive-deps": [
+    "react/no-danger": [
       "warn"
     ],
-    "valid-jsdoc": [
+    "react/no-deprecated": [
+      "warn"
+    ],
+    "react/no-unescaped-entities": [
       0
     ],
-    "babel/no-unused-expressions": [
-      1
-    ],
-    "import/order": [
+    "react/prop-types": [
       0
     ],
-    "import/no-unresolved": [
+    "react/react-in-jsx-scope": [
       0
     ],
-    "import/default": [
-      0
+    "react/state-in-constructor": [
+      "warn",
+      "never"
     ],
-    "import/namespace": [
-      0
-    ],
-    "import/named": [
-      0
-    ],
-    "promise/always-return": [
-      0
-    ],
-    "promise/prefer-await-to-then": [
-      0
+    "react/static-property-placement": [
+      "warn"
     ],
     "require-atomic-updates": [
       "warn"
     ],
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "all",
-        "endOfLine": "auto",
-        "useTabs": true,
-        "singleQuote": true,
-        "printWidth": 80,
-        "arrowParens": "avoid"
-      }
+    "unicorn/no-abusive-eslint-disable": [
+      "warn"
+    ],
+    "valid-jsdoc": [
+      0
     ],
     "curly": [
       0
