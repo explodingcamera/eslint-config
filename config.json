@@ -30,6 +30,15 @@
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
+    "@typescript-eslint/triple-slash-reference": [
+      0
+    ],
+    "@typescript-eslint/no-explicit-any": [
+      0
+    ],
+    "@next/next/no-img-element": [
+      0
+    ],
     "object-curly-spacing": [
       "error",
       "always"
@@ -352,7 +361,8 @@
       }
     ],
     "jsx-quotes": [
-      "off"
+      "off",
+      "prefer-single"
     ],
     "key-spacing": [
       "off",
@@ -1461,6 +1471,9 @@
       "error"
     ],
     "no-const-assign": [
+      "error"
+    ],
+    "no-constant-binary-expression": [
       "error"
     ],
     "no-dupe-class-members": [

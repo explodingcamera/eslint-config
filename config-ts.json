@@ -34,6 +34,20 @@
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
+    "@typescript-eslint/triple-slash-reference": [
+      0,
+      {
+        "path": "never",
+        "types": "never",
+        "lib": "never"
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": [
+      0
+    ],
+    "@next/next/no-img-element": [
+      0
+    ],
     "object-curly-spacing": [
       "off",
       "never"
@@ -493,6 +507,10 @@
             "message": "Use `symbol` instead.",
             "fixWith": "symbol"
           },
+          "BigInt": {
+            "message": "Use `bigint` instead.",
+            "fixWith": "bigint"
+          },
           "Object": {
             "message": "The `Object` type is mostly the same as `unknown`. You probably want `Record<string, unknown>` instead. See https://github.com/typescript-eslint/typescript-eslint/pull/848",
             "fixWith": "Record<string, unknown>"
@@ -633,7 +651,13 @@
     "no-duplicate-imports": [
       "off"
     ],
+    "import/no-duplicates": [
+      "off"
+    ],
     "@typescript-eslint/no-duplicate-imports": [
+      "error"
+    ],
+    "@typescript-eslint/no-duplicate-enum-values": [
       "error"
     ],
     "@typescript-eslint/no-dynamic-delete": [
@@ -757,6 +781,9 @@
         "colors"
       ]
     ],
+    "@typescript-eslint/no-redundant-type-constituents": [
+      "error"
+    ],
     "@typescript-eslint/no-require-imports": [
       "error"
     ],
@@ -791,6 +818,9 @@
     "@typescript-eslint/no-unnecessary-type-constraint": [
       "error"
     ],
+    "@typescript-eslint/no-useless-empty-export": [
+      "error"
+    ],
     "@typescript-eslint/no-unused-expressions": [
       "error"
     ],
@@ -821,6 +851,12 @@
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
       "error"
+    ],
+    "@typescript-eslint/parameter-properties": [
+      "error",
+      {
+        "prefer": "parameter-property"
+      }
     ],
     "@typescript-eslint/prefer-as-const": [
       "error"
@@ -902,16 +938,16 @@
       "error",
       "always"
     ],
+    "space-before-blocks": [
+      "off",
+      "always"
+    ],
+    "@typescript-eslint/space-before-blocks": [
+      "error",
+      "always"
+    ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       "error"
-    ],
-    "@typescript-eslint/triple-slash-reference": [
-      "error",
-      {
-        "path": "never",
-        "types": "never",
-        "lib": "never"
-      }
     ],
     "@typescript-eslint/type-annotation-spacing": [
       "error"
@@ -923,7 +959,10 @@
       "error"
     ],
     "@typescript-eslint/unified-signatures": [
-      "error"
+      "error",
+      {
+        "ignoreDifferentlyNamedParameters": true
+      }
     ],
     "no-undef": [
       "off",
@@ -939,9 +978,6 @@
     ],
     "unicorn/no-null": [
       "off"
-    ],
-    "@typescript-eslint/no-explicit-any": [
-      "warn"
     ],
     "constructor-super": [
       "off"
@@ -1092,7 +1128,8 @@
       "off"
     ],
     "jsx-quotes": [
-      "off"
+      "off",
+      "prefer-single"
     ],
     "key-spacing": [
       "off",
@@ -1198,10 +1235,6 @@
     "space-after-keywords": [
       "off"
     ],
-    "space-before-blocks": [
-      "off",
-      "always"
-    ],
     "space-before-function-parentheses": [
       "off"
     ],
@@ -1263,9 +1296,6 @@
       "off"
     ],
     "@typescript-eslint/no-extra-parens": [
-      "off"
-    ],
-    "@typescript-eslint/space-before-blocks": [
       "off"
     ],
     "babel/object-curly-spacing": [
@@ -2033,6 +2063,9 @@
     "no-class-assign": [
       "error"
     ],
+    "no-constant-binary-expression": [
+      "error"
+    ],
     "no-useless-computed-key": [
       "error",
       {
@@ -2118,9 +2151,6 @@
       1
     ],
     "import/no-named-as-default-member": [
-      1
-    ],
-    "import/no-duplicates": [
       1
     ],
     "import/export": [

@@ -34,6 +34,9 @@ const config = {
 		'prettier',
 	],
 	rules: {
+		'@typescript-eslint/triple-slash-reference': 0,
+		'@typescript-eslint/no-explicit-any': 0,
+		'@next/next/no-img-element': 0,
 		'object-curly-spacing': ['error', 'always'],
 		radix: 'warn',
 		'default-case': ['off'],
