@@ -22,23 +22,19 @@
     "requireConfigFile": false
   },
   "plugins": [
-    "react",
     "@typescript-eslint",
     "prettier",
     "import",
     "react-native",
     "react-hooks",
+    "react",
     "unicorn",
-    "babel",
     "promise"
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
     "@next/next/no-img-element": [
       0
-    ],
-    "babel/no-unused-expressions": [
-      1
     ],
     "capitalized-comments": [
       "off",

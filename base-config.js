@@ -12,7 +12,6 @@ const config = {
 		node: true,
 		es2020: true,
 	},
-	parser: '@babel/eslint-parser',
 	parserOptions: {
 		requireConfigFile: false,
 		ecmaVersion: 2020,
@@ -26,8 +25,8 @@ const config = {
 	},
 	plugins: [
 		'promise',
-		'babel',
 		'unicorn',
+		'react',
 		'react-hooks',
 		'react-native',
 		'import',
@@ -35,7 +34,6 @@ const config = {
 	],
 	rules: {
 		'@next/next/no-img-element': 0,
-		'babel/no-unused-expressions': 1,
 		'capitalized-comments': ['off'],
 		'comma-dangle': ['error', 'always-multiline'],
 		'default-case': ['off'],

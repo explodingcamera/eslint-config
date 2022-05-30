@@ -11,7 +11,6 @@ const eslint = new ESLint({
 eslint
 	.calculateConfigForFile('./sample.js')
 	.then(config => {
-		config.parser = '@babel/eslint-parser';
 		config = JSON.stringify(config, null, 2);
 
 		fs.writeFile('./config.json', config, err => {

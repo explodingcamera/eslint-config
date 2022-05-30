@@ -1,14 +1,14 @@
 # ESLint shareable config
+
 ## Some Features
 
-* Mostly Autofixable
-* Prettier is run automatically (No extra config needed)
-* React/JSX + React Hooks support
-* Security Issue Detection
-* Enforces Promise best-practices
-* Supports babel-plugin-module-resolver
-* TypeScript support
-& much more
+- Mostly Autofixable
+- Prettier is run automatically (No extra config needed)
+- React/JSX + React Hooks support
+- Security Issue Detection
+- Enforces Promise best-practices
+- TypeScript support
+  & much more
 
 ## Install
 
@@ -41,12 +41,15 @@ Or in `.eslintrc.json`:
 ```
 
 Now you can also use it via the eslint cli:
+
 ```bash
 $ npx eslint --format=pretty file.js
 ```
 
 ## Note for vs-code users:
+
 Sometimes the vscode plugin can act up, I recommend updating your config:
+
 ```js
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {

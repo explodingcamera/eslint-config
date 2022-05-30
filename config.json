@@ -6,7 +6,7 @@
     "es2021": true
   },
   "globals": {},
-  "parser": "@babel/eslint-parser",
+  "parser": null,
   "parserOptions": {
     "requireConfigFile": false,
     "ecmaVersion": 2020,
@@ -19,22 +19,18 @@
     }
   },
   "plugins": [
-    "react",
     "prettier",
     "import",
     "react-native",
     "react-hooks",
+    "react",
     "unicorn",
-    "babel",
     "promise"
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
     "@next/next/no-img-element": [
       0
-    ],
-    "babel/no-unused-expressions": [
-      1
     ],
     "capitalized-comments": [
       "off",

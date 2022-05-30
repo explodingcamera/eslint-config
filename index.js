@@ -3,12 +3,6 @@ const config = require('./config.json');
 config.overrides = [];
 
 try {
-	require.resolve('babel-plugin-module-resolver');
-
-	config.settings['import/resolver']['babel-module'] = {};
-} catch (_) {}
-
-try {
 	require.resolve('typescript');
 
 	const configTS = require('./config-ts.json');
