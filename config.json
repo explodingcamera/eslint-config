@@ -190,6 +190,9 @@
         "locale": "auto"
       }
     ],
+    "react/jsx-key": [
+      "warn"
+    ],
     "react/no-array-index-key": [
       "warn"
     ],
@@ -919,14 +922,6 @@
     ],
     "react/jsx-boolean-value": [
       "error"
-    ],
-    "react/jsx-key": [
-      "error",
-      {
-        "checkFragmentShorthand": true,
-        "checkKeyMustBeforeSpread": true,
-        "warnOnDuplicates": true
-      }
     ],
     "react/jsx-no-bind": [
       "error",

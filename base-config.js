@@ -82,6 +82,7 @@ const config = {
 		],
 		'react/jsx-one-expression-per-line': 0,
 		'react/jsx-sort-props': 0,
+		'react/jsx-key': 'warn',
 		'react/no-array-index-key': 'warn',
 		'react/no-danger': 'warn',
 		'react/no-deprecated': 'warn',

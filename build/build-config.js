@@ -11,6 +11,7 @@ const eslint = new ESLint({
 eslint
 	.calculateConfigForFile('./sample.js')
 	.then(config => {
+		config.rules['react/jsx-key'] = ['warn'];
 		config = JSON.stringify(config, null, 2);
 
 		fs.writeFile('./config.json', config, err => {
@@ -31,6 +32,7 @@ eslint
 		configTS.settings['import/parsers'] = {
 			'@typescript-eslint/parser': ['.ts', '.tsx'],
 		};
+		configTS.rules['react/jsx-key'] = ['warn'];
 
 		configTS = JSON.stringify(configTS, null, 2);
 
