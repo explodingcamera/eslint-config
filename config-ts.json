@@ -222,6 +222,14 @@
     "react/static-property-placement": [
       "warn"
     ],
+    "react/jsx-no-target-blank": [
+      0,
+      {
+        "warnOnSpreadAttributes": true,
+        "forms": true,
+        "links": true
+      }
+    ],
     "require-atomic-updates": [
       "warn"
     ],
@@ -1650,14 +1658,6 @@
     ],
     "react/jsx-no-script-url": [
       "error"
-    ],
-    "react/jsx-no-target-blank": [
-      "error",
-      {
-        "warnOnSpreadAttributes": true,
-        "forms": true,
-        "links": true
-      }
     ],
     "react/jsx-no-undef": [
       "error"

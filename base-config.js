@@ -91,6 +91,7 @@ const config = {
 		'react/react-in-jsx-scope': 0,
 		'react/state-in-constructor': 'warn',
 		'react/static-property-placement': 'warn',
+		'react/jsx-no-target-blank': 0,
 		'require-atomic-updates': 'warn',
 		'unicorn/no-abusive-eslint-disable': 'warn',
 		'valid-jsdoc': 0,

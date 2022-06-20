@@ -12,6 +12,7 @@ eslint
 	.calculateConfigForFile('./sample.js')
 	.then(config => {
 		config.rules['react/jsx-key'] = ['warn'];
+
 		config = JSON.stringify(config, null, 2);
 
 		fs.writeFile('./config.json', config, err => {
