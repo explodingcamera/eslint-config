@@ -12,6 +12,7 @@ eslint
 	.calculateConfigForFile('./sample.js')
 	.then(config => {
 		config.rules['react/jsx-key'] = ['warn'];
+		config.rules['react/jsx-curly-brace-presence'] = ['warn'];
 
 		config = JSON.stringify(config, null, 2);
 
@@ -34,6 +35,7 @@ eslint
 			'@typescript-eslint/parser': ['.ts', '.tsx'],
 		};
 		configTS.rules['react/jsx-key'] = ['warn'];
+		configTS.rules['react/jsx-curly-brace-presence'] = ['warn'];
 
 		configTS = JSON.stringify(configTS, null, 2);
 
