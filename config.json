@@ -226,6 +226,9 @@
         "links": true
       }
     ],
+    "react/hook-use-state": [
+      0
+    ],
     "require-atomic-updates": [
       "warn"
     ],
@@ -836,9 +839,6 @@
       "error"
     ],
     "react/default-props-match-prop-types": [
-      "error"
-    ],
-    "react/hook-use-state": [
       "error"
     ],
     "react/iframe-missing-sandbox": [

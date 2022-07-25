@@ -162,13 +162,8 @@ config.overrides[0] = {
 		'@typescript-eslint/prefer-readonly': ['off'],
 		'@typescript-eslint/prefer-readonly-parameter-types': ['off'],
 		'@typescript-eslint/quotes': 'off',
-		'@typescript-eslint/restrict-template-expressions': [
-			'error',
-			{
-				allowNumber: true,
-				allowNullish: true,
-			},
-		],
+		'@typescript-eslint/restrict-template-expressions': ['off'],
+		'@typescript-eslint/consistent-type-definitions': ['off'],
 		'@typescript-eslint/triple-slash-reference': 0,
 		'comma-dangle': ['off'],
 		'no-unused-vars': [

@@ -15,24 +15,24 @@
 		"preversion": "npm run build"
 	},
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "5.29.0",
-		"@typescript-eslint/parser": "5.29.0",
+		"@typescript-eslint/eslint-plugin": "5.30.7",
+		"@typescript-eslint/parser": "5.30.7",
 		"eslint-formatter-pretty": "4.1.0",
 		"eslint-plugin-import": "2.26.0",
-		"eslint-plugin-prettier": "4.0.0",
+		"eslint-plugin-prettier": "4.2.1",
 		"eslint-plugin-promise": "6.0.0",
-		"eslint-plugin-react": "7.30.0",
+		"eslint-plugin-react": "7.30.1",
 		"eslint-plugin-react-hooks": "4.6.0",
 		"eslint-plugin-react-native": "4.0.0",
 		"eslint-plugin-unicorn": "42.0.0",
 		"prettier": "2.6.2"
 	},
 	"devDependencies": {
-		"eslint": "8.18.0",
+		"eslint": "8.20.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-config-xo": "0.41.0",
 		"eslint-config-xo-react": "0.27.0",
-		"eslint-config-xo-typescript": "0.51.1",
+		"eslint-config-xo-typescript": "0.52.0",
 		"np": "7.6.1",
 		"typescript": "4.7.2"
 	},

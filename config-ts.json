@@ -230,6 +230,9 @@
         "links": true
       }
     ],
+    "react/hook-use-state": [
+      0
+    ],
     "require-atomic-updates": [
       "warn"
     ],
@@ -452,11 +455,14 @@
       "single"
     ],
     "@typescript-eslint/restrict-template-expressions": [
-      "error",
+      "off",
       {
-        "allowNumber": true,
-        "allowNullish": true
+        "allowNumber": true
       }
+    ],
+    "@typescript-eslint/consistent-type-definitions": [
+      "off",
+      "type"
     ],
     "@typescript-eslint/triple-slash-reference": [
       0,
@@ -552,6 +558,10 @@
     "@typescript-eslint/class-literal-property-style": [
       "error",
       "getters"
+    ],
+    "@typescript-eslint/consistent-generic-constructors": [
+      "error",
+      "constructor"
     ],
     "brace-style": [
       "off",
@@ -659,15 +669,6 @@
       "off"
     ],
     "@typescript-eslint/no-dupe-class-members": [
-      "error"
-    ],
-    "no-duplicate-imports": [
-      "off"
-    ],
-    "import/no-duplicates": [
-      "off"
-    ],
-    "@typescript-eslint/no-duplicate-imports": [
       "error"
     ],
     "@typescript-eslint/no-duplicate-enum-values": [
@@ -984,6 +985,9 @@
       "off"
     ],
     "unicorn/no-null": [
+      "off"
+    ],
+    "no-duplicate-imports": [
       "off"
     ],
     "constructor-super": [
@@ -1539,9 +1543,6 @@
       "error"
     ],
     "react/default-props-match-prop-types": [
-      "error"
-    ],
-    "react/hook-use-state": [
       "error"
     ],
     "react/iframe-missing-sandbox": [
@@ -2137,6 +2138,9 @@
       1
     ],
     "import/no-named-as-default-member": [
+      1
+    ],
+    "import/no-duplicates": [
       1
     ],
     "import/export": [
