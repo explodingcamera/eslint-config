@@ -29,14 +29,26 @@
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
+    "camelcase": [
+      "off",
+      {
+        "properties": "always",
+        "ignoreDestructuring": false,
+        "ignoreImports": false,
+        "ignoreGlobals": false
+      }
+    ],
     "@next/next/no-img-element": [
+      0
+    ],
+    "arrow-body-style": [
       0
     ],
     "capitalized-comments": [
       "off",
       "always",
       {
-        "ignorePattern": "pragma|ignore|prettier-ignore|webpack\\w+:|c8",
+        "ignorePattern": "pragma|ignore|prettier-ignore|webpack\\w+:|c8|type-coverage:",
         "ignoreInlineComments": true,
         "ignoreConsecutiveComments": true
       }
@@ -203,6 +215,9 @@
       "warn"
     ],
     "react/no-unescaped-entities": [
+      0
+    ],
+    "react/no-unused-prop-types": [
       0
     ],
     "react/prop-types": [
@@ -898,9 +913,6 @@
     "react/no-unsafe": [
       "error"
     ],
-    "react/no-unused-prop-types": [
-      "error"
-    ],
     "react/no-unused-state": [
       "error"
     ],
@@ -1336,15 +1348,6 @@
       "querystring",
       "colors"
     ],
-    "camelcase": [
-      "error",
-      {
-        "properties": "always",
-        "ignoreDestructuring": false,
-        "ignoreImports": false,
-        "ignoreGlobals": false
-      }
-    ],
     "func-name-matching": [
       "error",
       {
@@ -1440,9 +1443,6 @@
           "balanced": true
         }
       }
-    ],
-    "arrow-body-style": [
-      "error"
     ],
     "constructor-super": [
       "error"

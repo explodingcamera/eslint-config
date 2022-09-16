@@ -33,14 +33,26 @@
   ],
   "reportUnusedDisableDirectives": true,
   "rules": {
+    "camelcase": [
+      "off",
+      {
+        "properties": "always",
+        "ignoreDestructuring": false,
+        "ignoreImports": false,
+        "ignoreGlobals": false
+      }
+    ],
     "@next/next/no-img-element": [
+      0
+    ],
+    "arrow-body-style": [
       0
     ],
     "capitalized-comments": [
       "off",
       "always",
       {
-        "ignorePattern": "pragma|ignore|prettier-ignore|webpack\\w+:|c8",
+        "ignorePattern": "pragma|ignore|prettier-ignore|webpack\\w+:|c8|type-coverage:",
         "ignoreInlineComments": true,
         "ignoreConsecutiveComments": true
       }
@@ -207,6 +219,9 @@
       "warn"
     ],
     "react/no-unescaped-entities": [
+      0
+    ],
+    "react/no-unused-prop-types": [
       0
     ],
     "react/prop-types": [
@@ -439,7 +454,12 @@
       "always"
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
-      "off"
+      "off",
+      {
+        "ignoreTernaryTests": false,
+        "ignoreConditionalTests": false,
+        "ignoreMixedLogicalExpressions": false
+      }
     ],
     "@typescript-eslint/prefer-optional-chain": [
       "warn"
@@ -610,6 +630,15 @@
         "objectLiteralTypeAssertions": "allow-as-parameter"
       }
     ],
+    "@typescript-eslint/consistent-type-exports": [
+      "error",
+      {
+        "fixMixedExportsWithInlineTypeSpecifier": true
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": [
+      "error"
+    ],
     "func-call-spacing": [
       "off",
       "never"
@@ -645,15 +674,6 @@
           "delimiter": "semi",
           "requireLast": false
         }
-      }
-    ],
-    "camelcase": [
-      "off",
-      {
-        "properties": "always",
-        "ignoreDestructuring": false,
-        "ignoreImports": false,
-        "ignoreGlobals": false
       }
     ],
     "@typescript-eslint/no-base-to-string": [
@@ -1602,9 +1622,6 @@
     "react/no-unsafe": [
       "error"
     ],
-    "react/no-unused-prop-types": [
-      "error"
-    ],
     "react/no-unused-state": [
       "error"
     ],
@@ -2043,9 +2060,6 @@
           "balanced": true
         }
       }
-    ],
-    "arrow-body-style": [
-      "error"
     ],
     "no-class-assign": [
       "error"

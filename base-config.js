@@ -33,7 +33,9 @@ const config = {
 		'prettier',
 	],
 	rules: {
-		'@next/next/no-img-element': 0,
+		camelcase: 'off', // super annoying for API's
+		'@next/next/no-img-element': 0, // next/image is not supported for SSG
+		'arrow-body-style': 0, // really annoying when writing functional react components
 		'capitalized-comments': ['off'],
 		'comma-dangle': ['error', 'always-multiline'],
 		'default-case': ['off'],
@@ -87,6 +89,7 @@ const config = {
 		'react/no-danger': 'warn',
 		'react/no-deprecated': 'warn',
 		'react/no-unescaped-entities': 0,
+		'react/no-unused-prop-types': 0, // this can be buggy with typescript
 		'react/prop-types': 0,
 		'react/react-in-jsx-scope': 0,
 		'react/state-in-constructor': 'warn',
