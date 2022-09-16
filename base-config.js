@@ -132,6 +132,7 @@ config.overrides[0] = {
 	},
 	rules: {
 		...cfg.rules,
+		'@typescript-eslint/no-redundant-type-constituents': 'off', // redundant type constituents can be great for documentation
 		'@typescript-eslint/comma-dangle': ['off'],
 		'@typescript-eslint/consistent-indexed-object-style': ['warn'],
 		'@typescript-eslint/explicit-module-boundary-types': ['off'],

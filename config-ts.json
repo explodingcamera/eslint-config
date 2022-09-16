@@ -257,6 +257,9 @@
     "valid-jsdoc": [
       0
     ],
+    "@typescript-eslint/no-redundant-type-constituents": [
+      "off"
+    ],
     "@typescript-eslint/comma-dangle": [
       "off",
       "always-multiline"
@@ -808,9 +811,6 @@
         "querystring",
         "colors"
       ]
-    ],
-    "@typescript-eslint/no-redundant-type-constituents": [
-      "error"
     ],
     "@typescript-eslint/no-require-imports": [
       "error"
