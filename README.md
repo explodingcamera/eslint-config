@@ -16,12 +16,12 @@
 $ npm install -D -E eslint @explodingcamera/eslint-config
 ```
 
-(For typescript support, you need to have `typescript` installed too)
+(for typescript support, you need to have `typescript` installed too)
 
 ## Usage
 
-Install the eslint plugin for your editor and enable Fix-On-Save
-Then, add the ESLint config in your `package.json`:
+Install the eslint plugin for your editor and enable Fix-On-Save,
+then, add the ESLint config in your `package.json`:
 
 ```json
 {
@@ -43,7 +43,7 @@ Or in `.eslintrc.json`:
 Now you can also use it via the eslint cli:
 
 ```bash
-$ npx eslint --format=pretty file.js
+$ npx eslint file.js
 ```
 
 ## Note for vs-code users:

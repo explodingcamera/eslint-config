@@ -24,8 +24,6 @@
   "plugins": [
     "@typescript-eslint",
     "prettier",
-    "import",
-    "react-native",
     "react-hooks",
     "react",
     "unicorn",
@@ -63,21 +61,6 @@
     ],
     "default-case": [
       "off"
-    ],
-    "import/default": [
-      0
-    ],
-    "import/named": [
-      0
-    ],
-    "import/namespace": [
-      0
-    ],
-    "import/no-unresolved": [
-      0
-    ],
-    "import/order": [
-      0
     ],
     "lines-between-class-members": [
       0,
@@ -1005,6 +988,9 @@
       "off"
     ],
     "unicorn/no-null": [
+      "off"
+    ],
+    "import/namespace": [
       "off"
     ],
     "no-duplicate-imports": [
@@ -2147,39 +2133,11 @@
     ],
     "promise/valid-params": [
       "warn"
-    ],
-    "import/no-named-as-default": [
-      1
-    ],
-    "import/no-named-as-default-member": [
-      1
-    ],
-    "import/no-duplicates": [
-      1
-    ],
-    "import/export": [
-      2
     ]
   },
   "settings": {
     "react": {
       "version": "detect"
-    },
-    "import/resolver": {
-      "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
-      }
-    },
-    "import/parsers": {
-      "@typescript-eslint/parser": [
-        ".ts",
-        ".tsx"
-      ]
     }
   },
   "ignorePatterns": []

@@ -1,12 +1,5 @@
 const config = {
-	extends: [
-		'plugin:import/errors',
-		'plugin:import/warnings',
-		'plugin:promise/recommended',
-		'xo',
-		'xo-react',
-		'prettier',
-	],
+	extends: ['plugin:promise/recommended', 'xo', 'xo-react', 'prettier'],
 	env: {
 		browser: true,
 		node: true,
@@ -23,15 +16,7 @@ const config = {
 			jsx: true,
 		},
 	},
-	plugins: [
-		'promise',
-		'unicorn',
-		'react',
-		'react-hooks',
-		'react-native',
-		'import',
-		'prettier',
-	],
+	plugins: ['promise', 'unicorn', 'react', 'react-hooks', 'prettier'],
 	rules: {
 		camelcase: 'off', // super annoying for API's
 		'@next/next/no-img-element': 0, // next/image is not supported for SSG
@@ -39,11 +24,6 @@ const config = {
 		'capitalized-comments': ['off'],
 		'comma-dangle': ['error', 'always-multiline'],
 		'default-case': ['off'],
-		'import/default': 0,
-		'import/named': 0,
-		'import/namespace': 0,
-		'import/no-unresolved': 0,
-		'import/order': 0,
 		'lines-between-class-members': 0,
 		'new-cap': 'warn',
 		'no-negated-condition': 'warn',
@@ -104,8 +84,6 @@ const config = {
 		react: {
 			version: 'detect',
 		},
-		'import/resolver': {},
-		'import/parsers': {},
 	},
 };
 

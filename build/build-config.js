@@ -31,9 +31,9 @@ eslint
 	.calculateConfigForFile('./sample.ts')
 	.then(configTS => {
 		configTS.parser = '@typescript-eslint/parser';
-		configTS.settings['import/parsers'] = {
-			'@typescript-eslint/parser': ['.ts', '.tsx'],
-		};
+
+		delete configTS.settings['import/parsers'];
+		delete configTS.settings['import/resolver'];
 		configTS.rules['react/jsx-key'] = ['warn'];
 		configTS.rules['react/jsx-curly-brace-presence'] = ['warn'];
 
