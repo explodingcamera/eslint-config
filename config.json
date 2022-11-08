@@ -1017,6 +1017,9 @@
         "allowEmptyCatch": true
       }
     ],
+    "no-empty-static-block": [
+      "error"
+    ],
     "no-ex-assign": [
       "error"
     ],
@@ -1280,7 +1283,10 @@
       }
     ],
     "prefer-regex-literals": [
-      "error"
+      "error",
+      {
+        "disallowRedundantWrapping": true
+      }
     ],
     "yoda": [
       "error"
@@ -1442,7 +1448,7 @@
     "no-dupe-class-members": [
       "error"
     ],
-    "no-new-symbol": [
+    "no-new-native-nonconstructor": [
       "error"
     ],
     "no-this-before-super": [

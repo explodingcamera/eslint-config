@@ -1717,6 +1717,9 @@
         "allowEmptyCatch": true
       }
     ],
+    "no-empty-static-block": [
+      "error"
+    ],
     "no-ex-assign": [
       "error"
     ],
@@ -1938,7 +1941,10 @@
       }
     ],
     "prefer-regex-literals": [
-      "error"
+      "error",
+      {
+        "disallowRedundantWrapping": true
+      }
     ],
     "yoda": [
       "error"
@@ -2051,6 +2057,9 @@
       "error"
     ],
     "no-constant-binary-expression": [
+      "error"
+    ],
+    "no-new-native-nonconstructor": [
       "error"
     ],
     "no-useless-computed-key": [
