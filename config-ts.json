@@ -293,7 +293,6 @@
           "protected-field",
           "private-decorated-field",
           "private-instance-field",
-          "private-abstract-field",
           "private-field",
           "instance-field",
           "abstract-field",
@@ -313,7 +312,6 @@
           "protected-method",
           "private-decorated-method",
           "private-instance-method",
-          "private-abstract-method",
           "private-method",
           "instance-method",
           "abstract-method",
@@ -739,9 +737,6 @@
       }
     ],
     "@typescript-eslint/no-for-in-array": [
-      "error"
-    ],
-    "@typescript-eslint/no-implicit-any-catch": [
       "error"
     ],
     "@typescript-eslint/no-inferrable-types": [
