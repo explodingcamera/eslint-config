@@ -1,14 +1,8 @@
 # ESLint shareable config
 
-## Some Features
+## Disclaimer
 
-- Mostly Autofixable
-- Prettier is run automatically (No extra config needed)
-- React/JSX + React Hooks support
-- Security Issue Detection
-- Enforces Promise best-practices
-- TypeScript support
-  & much more
+For new projects, I recommend using [Rome](https://rome.tools/) instead. It's a lot faster than ESLint/Prettier and works great out of the box. I will still maintain this repo for my own legacy projects.
 
 ## Install
 
