@@ -779,6 +779,9 @@
     "vue/multiline-html-element-content-newline": [
       "off"
     ],
+    "vue/multiline-ternary": [
+      "off"
+    ],
     "vue/mustache-interpolation-spacing": [
       "off"
     ],
