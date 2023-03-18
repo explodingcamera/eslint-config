@@ -17,7 +17,6 @@
       "legacyDecorators": true
     },
     "warnOnUnsupportedTypeScriptVersion": false,
-    "jsx": true,
     "project": "tsconfig.json",
     "requireConfigFile": false
   },
@@ -827,6 +826,9 @@
     "@typescript-eslint/no-unnecessary-type-constraint": [
       "error"
     ],
+    "@typescript-eslint/no-unsafe-argument": [
+      "error"
+    ],
     "@typescript-eslint/no-unsafe-declaration-merging": [
       "error"
     ],
@@ -1311,6 +1313,12 @@
       "off"
     ],
     "@babel/semi": [
+      "off"
+    ],
+    "@typescript-eslint/block-spacing": [
+      "off"
+    ],
+    "@typescript-eslint/key-spacing": [
       "off"
     ],
     "@typescript-eslint/no-extra-parens": [
